@@ -136,7 +136,7 @@ class compression:
                         lenf1=len(data)
                         lenf7=len(data)
                         lenf8=lenf7
-                        if lenf7==(2**40)-1:
+                        if lenf7>=(2**40)-1:
                                 raise SystemExit
                         if lenf7==0:
                         	raise SystemExit
