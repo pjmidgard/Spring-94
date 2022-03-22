@@ -103,6 +103,10 @@ class compression:
                     sda16=""
 
                     sda11=""
+                    sda171=""
+                    sda172=""
+                    szx1=""
+                    szx3="'"
 
                     D=0
 
@@ -361,7 +365,7 @@ class compression:
                                                          z=z+1
                                     	
 
-                                    if  lenfS<=8 or Circle_times7==(2**48)-1 or ccc==2:
+                                    if  lenfS<=8 or Circle_times7==(2**48)-1:
                                                                                                                               
                                                     
                                               
@@ -401,7 +405,7 @@ class compression:
                                                          z=z+1
    
                                
-                                    if  lenfS<=8 or Circle_times7==(2**48)-1 and c==2:
+                                    if  lenfS<=8 or Circle_times7==(2**48)-1 or ccc==2:
                                                 
                                              sda17="1"+sda16+sda17
                                              lenf=len(sda17)
