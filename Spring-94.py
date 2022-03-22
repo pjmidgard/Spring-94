@@ -100,6 +100,7 @@ class compression:
 
                     sda5=""
                     sda6=""
+                    sda16=""
 
                     sda11=""
 
@@ -292,12 +293,14 @@ class compression:
                                                 while z<xc:
                                                         szx4="0"+szx4
                                                         z=z+1
+
+                                        sda16=sda16+szx4+sda15
                                         
                                         Circle_times6=0
-                                        sda3=szx4+sda15+sda3[8:]
+                                        sda3=sda3[8:]
                                         Circle_times7=Circle_times7+1
                                         
-                                   if Circle_times6>127:
+                                    if Circle_times6>127:
                                            ccc=2
 
                                     
@@ -364,7 +367,7 @@ class compression:
                                
                                     if  lenfS<=lenf8 or Circle_times7==(2**48)-1 or ccc==2:
                                                 
-                                             sda17="1"+sda17
+                                             sda17="1"+sda16+sda17
                                              lenf=len(sda17)
                                         
                                              szx=""
