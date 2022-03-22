@@ -280,7 +280,7 @@ class compression:
                                     
                                    
                                             
-                                    if sda3[0:8]=="11111111" and Circle_times6>0 and Circle_times6<=127:
+                                    if sda3[0:8]=="11111111" and Circle_times6>0 or Circle_times6<=127 and sda3[0:8]=="11111111":
 
                                             
                                         
