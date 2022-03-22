@@ -370,6 +370,7 @@ class compression:
                                              
                                              lenf=len(sda172)
                                              T=T+1
+                                             
                                                                                 
                                              
                                         
@@ -387,6 +388,7 @@ class compression:
                                               
                                                 
                                              sda171=bin(T)[2:]
+                                            
                                              
                                              lenf=len(sda171)
                                         
