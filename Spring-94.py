@@ -259,29 +259,51 @@ class compression:
                                     sda17=""
 
                                     if Circle_times2==0 and S==1:
-                                        sda3="1"+sda3
+                                        sda3="11111111"+sda3
                                         S=0
                                     
                                     lenf6=len(sda3)
                                     
                                     
-                                    sda4=sda3[0:1]
+                                    sda4=sda3[lenf6:lenf6-8]
+
+                                    sda11=sda4[::-1]
                                     
-                                    sda6=sda3[1:]
+                                    sda6=sda3[0:lenf6-8]
                                     
-                                    sda3=sda6+sda11
+                                    sda3=sda11+sda6
                                     Circle_times6=Circle_times6+1
-                                    #print(sda3)
+                                    
                                    
                                             
-                                    if sda3[0:1]=="1" and Circle_times6==8:
-                                        sda3=sda3[1:]
+                                    if sda3[0:8]=="11111111" and Circle_times6>0 and Circle_times6<=127:
+
+                                            
+                                        
+
+                                        sda15=bin(Circle_times6)[2:]
+                                             
+                                        lenf=len(sda15)
+                                        
+                                        szx4=""
+                                        xc=7-lenf%7
+                                        z=0
+                                        if xc!=7:
+                                                while z<xc:
+                                                        szx4="0"+szx4
+                                                        z=z+1
                                         
                                         Circle_times6=0
+                                        sda3=szx4+sda15+sda3[8:]
                                         Circle_times7=Circle_times7+1
+                                        
+                                   if Circle_times6>127:
+                                           ccc=2
 
-                                    if sda3[0:1]=="1" and Circle_times6>8:
-                                            ccc=2
+                                    
+                                   
+                                    
+
                                                     
                                    
                               
