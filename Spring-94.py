@@ -61,15 +61,15 @@ class compression:
                     if i==2:
                         Format=".Spring93"
                         Long_Format=len(Format)
-                        if nameas[nac-Long_Format:nac]==".Spring93":
+                        if nameas[nac-Long_Format:nac]==".Spring94":
                    
                         	nameas=name[:nac-Long_Format]
                         	nac=len(nameas)
                         	
                         	C=1
 
-                        elif nameas[nac-Long_Format:nac]!=".Spring93":
-                                print("Sorry, this is not .Spring93")
+                        elif nameas[nac-Long_Format:nac]!=".Spring94":
+                                print("Sorry, this is not .Spring94")
                                 raise SystemExit
                    
                     if i==1:
