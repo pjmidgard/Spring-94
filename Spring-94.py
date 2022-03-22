@@ -85,7 +85,7 @@ class compression:
                     T8=0
                     
                     Circle_times5=0
-                    Circle_times6=0
+                    Circle_times6=-1
                     
                     Start_N=0
 
@@ -276,11 +276,13 @@ class compression:
                                     
                                     sda3=sda11+sda6
                                     Circle_times6=Circle_times6+1
+                                    #print(Circle_times6)
 
                                     
                                    
                                             
-                                    if sda3[0:8]=="11111111" and Circle_times6>0 or Circle_times6<=127 and sda3[0:8]=="11111111":
+                                    if sda3[0:8]=="11111111" and Circle_times6>-1 and Circle_times6<128:
+                                        
 
                                             
                                         
@@ -300,12 +302,15 @@ class compression:
                                         sda16=sda16+szx4+sda15
                                         Lenf16=len(sda16)
                                         
-                                        Circle_times6=0
+                                        Circle_times6=-1
+                                       
                                         sda3=sda3[8:]
+                                       
                                         
                                         
                                     if Circle_times6>127:
                                            ccc=2
+                                           Circle_times6=-1
 
                                     
                                    
@@ -376,7 +381,7 @@ class compression:
                                                          szx3="0"+szx3
                                                          z=z+1
                                     	
-                                    if  lenfS<=8 or Circle_times7==(2**48)-1 or ccc==2:
+                                    if  lenfS<=8 or Circle_times7==(2**48)-1:
                                               
                                                     
                                               
