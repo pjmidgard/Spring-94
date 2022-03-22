@@ -1,4 +1,5 @@
 # Spring-94
 Spring-94
-
-Add 1 on the front Skake by one add on the front and reverso it and delete on the front.
+Algorithm paq:
+We need to try predict information.
+Add 8 bits of the ones Add 8 bits front the end to the front reverso it try to find 8 ones from period 1-127, delete it and 1-127 by seven bits.
