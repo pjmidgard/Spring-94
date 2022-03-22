@@ -241,7 +241,7 @@ class compression:
                                 
                                     sda3=sda2
 
-                                    lenf8=int((lenf7*8)//1.5)
+                                    lenf8=int((lenf7*8)//1.1)
                                     
                                     lenf6=len(sda3)
                                 
