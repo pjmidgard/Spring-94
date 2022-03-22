@@ -335,6 +335,9 @@ class compression:
                                     
                           
                                     sda2=sda17
+                                    if ccc==2:
+                                        T=T+1
+                                       
 
                                     if lenf6>(2**48)-1:
                                             print("This file too big")
@@ -373,7 +376,8 @@ class compression:
                                              sda172=bin(lenf7)[2:]
                                              
                                              lenf=len(sda172)
-                                             T=T+1
+                                             
+                                             
                                              
                                                                                 
                                              
@@ -390,7 +394,7 @@ class compression:
                                               
                                                     
                                               
-                                                
+                                             
                                              sda171=bin(T)[2:]
                                             
                                              
