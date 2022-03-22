@@ -415,7 +415,7 @@ class compression:
                                     
                                              lenf=len(sda17)
                                              
-                                            
+                                             #print(sda171)
                                              sda17=szx5+sda174+szx3+sda172+szx1+sda171+szx+sda17
                                              sda16=""
                                              sda2=sda17
