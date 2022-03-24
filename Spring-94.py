@@ -354,7 +354,7 @@ class compression:
                                     if  lenfS<=8 or Circle_times2==(2**48)-1:
                                             sda17="1"+sda17
                                             
-                                    if  lenfS<=8 or Circle_times2==(2**48)-1 or ccc==2:
+                                    if  lenfS<=8 or Circle_times2==(2**48)-1:
 
                                              
                                              
