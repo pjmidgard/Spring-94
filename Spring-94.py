@@ -81,11 +81,11 @@ class compression:
                     Lenf_File=0
                     
                     Circle_times3=0
-                    Circle_times7=0
+                    Circle_times7=11111
                     T8=0
                     
                     Circle_times5=0
-                    Circle_times6=-1
+                    Circle_times6=0
                     
                     Start_N=0
 
@@ -103,10 +103,6 @@ class compression:
                     sda16=""
 
                     sda11=""
-                    sda171=""
-                    sda172=""
-                    szx1=""
-                    szx3="'"
 
                     D=0
 
@@ -262,70 +258,45 @@ class compression:
 
                                     sda10=""
                                     sda11=""
-                                    
+
+                                    #Back if e.g.: 999 999-1...=899.
+                                    #
+                                    if   Circle_times2==0:
+                                            sda3="1"+sda3
                                     sda17=""
-
-                                    if Circle_times2==0 and S==1:
-                                        sda3="11111111"+sda3
-                                        S=0
-                                    
-                                    lenf6=len(sda3)
-                                    
-                                    
-                                    sda4=sda3[lenf6:lenf6-8]
-
-                                    sda11=sda4[::-1]
-                                    
-                                    sda6=sda3[0:lenf6-8]
-                                    
-                                    sda3=sda11+sda6
-                                    Circle_times6=Circle_times6+1
-                                    #print(Circle_times6)
-
-                                    
-                                   
-                                            
-                                    if sda3[0:8]=="11111111" and Circle_times6>-1 and Circle_times6<128:
-                                        
-
-                                            
-                                        
-
-                                        sda15=bin(Circle_times6)[2:]
-                                             
-                                        lenf=len(sda15)
-                                        
-                                        szx4=""
-                                        xc=7-lenf%7
-                                        z=0
-                                        if xc!=7:
-                                                while z<xc:
-                                                        szx4="0"+szx4
-                                                        z=z+1
-
-                                        sda16=sda16+szx4+sda15
-                                        Lenf16=len(sda16)
-                                        
-                                        Circle_times6=-1
-                                       
-                                        sda3=sda3[8:]
-                                       
-                                        
-                                        
-                                    if Circle_times6>127:
-                                           ccc=2
-                                           Circle_times6=-1
-
-                                    
-                                   
-                                    
-
-                                                    
-                                   
-                              
                                     sda17=sda3
-                                    lenfS=len(sda17)
+                                    
+                                    
+                                    #print(lenfSS)
+                                    #os.system("pause")
+                                    
+
+                                    
+                                    Number_Information = int(sda17, 2)
+                                    How_many_nubers=str(Number_Information)
+                                    long_Howmany_numbers=len(How_many_nubers)
+                                    Minus_one_number=str(Circle_times7)
+                                    Minus_one_number2=Minus_one_number[0:4]
+
+                                    if How_many_nubers[0:4]==Minus_one_number2 and Circle_times7<=19999:
+                                            ccc=2
+                                            #print(ccc)
+                                   
+                                    if How_many_nubers[0:5]==Minus_one_number:
+                                            Number_Information=Number_Information-10**(long_Howmany_numbers-1)
+                                            #print(Number_Information)
+                                            #print(lenfS)
+
+                                    sda11=bin(Number_Information)[2:]
+                                    lenfS=len(sda11)
+                                    Circle_times7=Circle_times7+1
+                                    if Circle_times7==99999:
+                                            Circle_times7=11111
+                                            
                                     #print(lenfS)
+                                    #print(Number_Information)#111111 
+
+                                   
                                 
                                     
                                     
@@ -334,105 +305,52 @@ class compression:
                                     Circle_times2=Circle_times2+1
                                     
                           
-                                    sda2=sda17
-                                    if ccc==2:
-                                        T=T+1
-                                       
+                                    sda2=sda11
 
-                                    if lenf6>(2**48)-1:
-                                            print("This file too big")
-                                            x2 = time()
-                                            x3=x2-x
-                                            xs=float(x3)
-                                            return print(x3)
-
-                                    if  lenfS<=8 or T==(2**48)-1 or ccc==2:
-                                              
+                                    	
+                                    if  lenfS<=8 or Circle_times2==(2**160)-1 or DD!=0:
+                                        
                                                     
                                               
                                                 
-                                             sda174=bin(Lenf16)[2:]
-                                             
-                                             
-                                             lenf=len(sda174)
-                                             
-    
-
-                                        
-                                             szx5=""
-                                             xc=48-lenf%48
-                                             z=0
-                                             if xc!=48:
-                                                     while z<xc:
-                                                         szx5="0"+szx5
-                                                         z=z+1
-                                    	
-
-                                    if  lenfS<=8 or T==(2**48)-1:
-                                                                                                                              
-                                                    
-                                              
-                                                
-                                             sda172=bin(lenf7)[2:]
-                                             
-                                             lenf=len(sda172)
-                                             
-                                             
-                                             
-                                                                                
-                                             
-                                        
-                                             szx3=""
-                                             xc=48-lenf%48
-                                             z=0
-                                             if xc!=48:
-                                                     while z<xc:
-                                                         szx3="0"+szx3
-                                                         z=z+1
-                                    	
-                                    if  lenfS<=8 or T==(2**48)-1:
-                                              
-                                                    
-                                              
-                                             
-                                             sda171=bin(T)[2:]
-                                            
+                                             sda171=bin(Circle_times2)[2:]
                                              
                                              lenf=len(sda171)
                                         
                                              szx1=""
-                                             xc=48-lenf%48
+                                             xc=160-lenf%160
                                              z=0
-                                             if xc!=48:
+                                             if xc!=160:
                                                      while z<xc:
                                                          szx1="0"+szx1
                                                          z=z+1
    
-                               
-                                    if  lenfS<=8 or T==(2**48)-1 or ccc==2:
-                                                
-                                             sda17="1"+sda16+sda17
+
+                                  
+   
+                                    if  lenfS<=8 or ccc==2:
+                                            sda17="10"+sda17
+                                    if  lenfS<=8 and ccc==1:
+                                            sda17="11"+sda17
+                                            
+                                    if  lenfS<=8:
+
+                                             
+                                             
                                              lenf=len(sda17)
                                         
                                              szx=""
                                              xc=8-lenf%8
                                              z=0
-                                             if xc!=8:
+                                             if xc!=160:
                                                      while z<xc:
                                                          szx="0"+szx
                                                          z=z+1
-   
-                                    
-                                             lenf=len(sda17)
-                                             
-                                             #print(sda171)
-                                             sda17=szx5+sda174+szx3+sda172+szx1+sda171+szx+sda17
-                                             sda16=""
-                                             sda2=sda17
-                                             ccc=1
-                                             #print(len(sda17))
-
-                                    if lenfS<=8 or T==(2**48)-1:
+                                           
+                                             sda17=szx1+sda171+szx+sda17
+                                        
+                                            
+                                    if lenfS<=8:
                                         
                                     		L=len(sda17)
                                     		n = int(sda17, 2)
@@ -455,6 +373,7 @@ class compression:
                                     		return print(x3)
                                     		
                                 if i==2:
+                                    #Back if e.g.: 999 899+1...=999.
 
                                     sda17=""
                               
