@@ -286,7 +286,7 @@ class compression:
                                     if How_many_nubers[0:5]==Minus_one_number:
                                             Number_Information=Number_Information-10**(long_Howmany_numbers-1)
                                             #print(Number_Information)
-                                            print(lenfS)
+                                            #print(lenfS)
                                             
 
                                             
@@ -312,7 +312,7 @@ class compression:
                           
                                     sda2=sda11
 
-                                    if  lenfS<=lenf8 or Circle_times2==(2**48)-1 or DD!=0:
+                                    if  lenfS<=lenf8 or Circle_times2==(2**48)-1 or DD!=0 or ccc==2:
                                         
                                                     
                                               
@@ -330,7 +330,7 @@ class compression:
                                                          z=z+1
 
                                     	
-                                    if  lenfS<=lenf8 or Circle_times2==(2**48)-1 or DD!=0:
+                                    if  lenfS<=lenf8 or Circle_times2==(2**48)-1 or DD!=0 or ccc==2:
                                         
                                                     
                                               
