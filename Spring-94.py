@@ -311,7 +311,7 @@ class compression:
                           
                                     sda2=sda11
 
-                                    if  lenfS<=8 or Circle_times2==(2**48)-1 or DD!=0:
+                                    if  lenfS<=8 or Circle_times2==(2**48)-1:
                                         
                                                     
                                               
@@ -329,7 +329,7 @@ class compression:
                                                          z=z+1
 
                                     	
-                                    if  lenfS<=8 or Circle_times2==(2**48)-1 or DD!=0:
+                                    if  lenfS<=8 or Circle_times2==(2**48)-1:
                                         
                                                     
                                               
