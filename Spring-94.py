@@ -373,7 +373,7 @@ class compression:
                                              szx=""
                                              xc=8-lenf%8
                                              z=0
-                                             if xc!=160:
+                                             if xc!=8:
                                                      while z<xc:
                                                          szx="0"+szx
                                                          z=z+1
@@ -441,17 +441,16 @@ class compression:
                                     if C==1:
                                         if   Circle_times2==0 and S==1:
 
-                                                sda11=sda3[0:160]
+                                                sda11=sda3[0:48]
                                                 Lenf_File = int(sda11, 2)
-                                                sda3=sda3[160:]
+                                                sda3=sda3[48:]
 
-                                                Minus_One_bits=sda3[0:8]
-                                                Minus_One = int(Minus_One_bits, 2)
-                                                sda3=sda3[8:]
+                                               
+                                               
 
-                                                Times=sda3[0:160]
+                                                Times=sda3[0:48]
                                                 T = int(Times, 2)
-                                                sda3=sda3[160:]
+                                                sda3=sda3[48:]
                                                 
 
                                                 if Minus_One==1:
