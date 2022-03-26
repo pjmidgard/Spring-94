@@ -256,7 +256,7 @@ class compression:
                                             
                                             elif Number_Row2[0:2]==Number_Row_Count_str:
                                                 
-                                                    Number_Row1=Number_Row1+Number_Row2[1:2]
+                                                    Number_Row1=Number_Row1+Number_Row2[0:1]
                                                     Number_Row_Count=Number_Row_Count+1
                                                     Number_Row_Count_str=str(Number_Row_Count)
                                                     
@@ -325,6 +325,7 @@ class compression:
                                                          	z=z+1
                                                 
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
+                                            
                                     	   
                                             Equal_info_between_of_the_cirlce_of_the_file_29=bin(Circle_times3)[2:]
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_29)
