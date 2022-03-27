@@ -233,7 +233,6 @@ class compression:
                                     
                                     nameas=name+".bin"
 
-                                    Count_Row=0
                                     
                                     Number_Row1=""
                                     Number_Row=str(Number_of_the_file)
