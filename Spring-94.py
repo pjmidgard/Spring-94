@@ -250,29 +250,35 @@ class compression:
                                             Number_Row_Count_str=str(Number_Row_Count)
                                             Number_Row_Count_str2=Number_Row_Count_str[1:2]+Number_Row_Count_str[0:1]
 
-                                            if Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str:
+                                            if Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row1=Number_Row1+Number_Row2[1:2]+Number_Row2[0:1]#change order
                                                     Number_Row_Count=Number_Row_Count+1
                                                     Number_Row_Count_str=str(Number_Row_Count)
 
 
-                                            elif Number_Row2[1:2]==Number_Row_Count_str[1:2] and Number_Row2[0:2]!=Number_Row_Count_str:
+                                            elif Number_Row2[1:2]==Number_Row_Count_str[1:2] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row1=Number_Row1+Number_Row2#check 1:2
                                                     Number_Row_Count=Number_Row_Count+1
                                                     Number_Row_Count_str=str(Number_Row_Count)
                                                     
-                                            elif Number_Row2[0:1]==Number_Row_Count_str2[0:1] and Number_Row2[0:2]!=Number_Row_Count_str:
+                                            elif Number_Row2[0:1]==Number_Row_Count_str2[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row1=Number_Row1+Number_Row2[1:2]+Number_Row2[0:1]#change order of the change order
                                                     Number_Row_Count=Number_Row_Count+1
                                                     Number_Row_Count_str=str(Number_Row_Count)
                                                    
-                                            elif Number_Row2[0:1]==Number_Row_Count_str2[1:2] and Number_Row2[0:2]!=Number_Row_Count_str:
+                                            elif Number_Row2[0:1]==Number_Row_Count_str2[1:2] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row1=Number_Row1+Number_Row2#check order 1:2
                                                     Number_Row_Count=Number_Row_Count+1
-                                                    Number_Row_Count_str=str(Number_Row_Count)    
+                                                    Number_Row_Count_str=str(Number_Row_Count)
+
+                                            elif ei==0:
+                                                    Number_Row1=Number_Row1+Number_Row2
+                                                    Number_Row_Count=Number_Row_Count+1
+                                                    Number_Row_Count_str=str(Number_Row_Count)
+                                            
                                                     
                                             
-                                            elif Number_Row2[0:2]==Number_Row_Count_str:
+                                            elif Number_Row2[0:2]==Number_Row_Count_str and ei!=0:
                                                 
                                                     Number_Row1=Number_Row1+Number_Row2[0:1]#check two numbers of predict, left 0:1 and delete the last one.
                                                     Number_Row_Count=Number_Row_Count+1
