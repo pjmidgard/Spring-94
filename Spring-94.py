@@ -246,6 +246,7 @@ class compression:
                                     while ei<Row:
                                             Number_Row2=Number_Row[ei:ei+2]
                                             Number_Row_Count_str=str(Number_Row_Count)
+                                            Number_Row_Count_str2=Number_Row_Count_str[1:2]+Number_Row_Count_str[0:1]
 
                                             if Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str:
                                                     Number_Row1=Number_Row1+Number_Row2[1:2]+Number_Row2[0:1]
@@ -258,12 +259,25 @@ class compression:
                                                     Number_Row_Count=Number_Row_Count+1
                                                     Number_Row_Count_str=str(Number_Row_Count)
                                                     
+                                            elif Number_Row2[0:1]==Number_Row_Count_str2[0:1] and Number_Row2[0:2]!=Number_Row_Count_str:
+                                                    Number_Row1=Number_Row1+Number_Row2[1:2]+Number_Row2[0:1]
+                                                    Number_Row_Count=Number_Row_Count+1
+                                                    Number_Row_Count_str=str(Number_Row_Count)
+                                                   
+                                            elif Number_Row2[0:1]==Number_Row_Count_str2[1:2] and Number_Row2[0:2]!=Number_Row_Count_str:
+                                                    Number_Row1=Number_Row1+Number_Row2
+                                                    Number_Row_Count=Number_Row_Count+1
+                                                    Number_Row_Count_str=str(Number_Row_Count)    
+                                                    
                                             
                                             elif Number_Row2[0:2]==Number_Row_Count_str:
                                                 
                                                     Number_Row1=Number_Row1+Number_Row2[0:1]
                                                     Number_Row_Count=Number_Row_Count+1
                                                     Number_Row_Count_str=str(Number_Row_Count)
+
+
+                                            
                                                     
                                                     
                                                 
@@ -296,7 +310,7 @@ class compression:
                                     #print(Deep3)
                                     if lenf6==lenfS:
                                             Deep3=lenfS
-
+                                            
                                     if compress_or_not_compress==2 and Circle_times2==0:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
                                     
