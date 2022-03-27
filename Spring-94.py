@@ -447,11 +447,11 @@ class compression:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[8:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
 
-                                                sda10=Equal_info_between_of_the_cirlce_of_the_file[0:16]
+                                                sda10=Equal_info_between_of_the_cirlce_of_the_file[0:48]
                                                 Deep5 = int(sda10, 2)
                                                 Deep5=Deep5+2
                                                 Deep4=Deep5-1
-                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[16:]
+                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                                 Deep7=Deep5-2
                                                 
