@@ -232,15 +232,15 @@ class compression:
                                     Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
                                     
                                     nameas=name+".bin"
+                                    #Algorithm paq:
 
+                                    #We need to try predict information. We try to predict number from 10-99.
                                     
                                     Number_Row1=""
                                     Number_Row=str(Number_of_the_file)
                                     Number_Row_Count=Number_Row_Count+1
                                     Number_Row_Count_str=str(Number_Row_Count)
-                                    #Algorithm paq:
-
-                                    #We need to try predict information. We try to predict number from 10-99.
+                            
                                     
                                     
                                     Row=len(Number_Row)
