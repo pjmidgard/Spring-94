@@ -275,11 +275,6 @@ class compression:
                                                     Number_Row1=Number_Row1+Number_Row2[0:1]
                                                     Number_Row_Count=Number_Row_Count+1
                                                     Number_Row_Count_str=str(Number_Row_Count)
-
-
-                                            
-                                                    
-                                                    
                                                 
                                             else:
                                                     Number_Row1=Number_Row1+Number_Row2
