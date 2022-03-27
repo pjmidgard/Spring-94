@@ -241,8 +241,6 @@ class compression:
                                     Number_Row_Count=Number_Row_Count+1
                                     Number_Row_Count_str=str(Number_Row_Count)
                             
-                                    
-                                    
                                     Row=len(Number_Row)
                                     Number_Row_Count=10
                                     ei=0
