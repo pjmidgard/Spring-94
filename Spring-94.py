@@ -237,12 +237,14 @@ class compression:
                                     #We need to try predict information. We try to predict number from 10-99.
                                     
                                     Number_Row1=""
+                                    Number_Row_Count=10
                                     Number_Row=str(Number_of_the_file)
                                     Number_Row_Count=Number_Row_Count+1
                                     Number_Row_Count_str=str(Number_Row_Count)
                             
+                                    
+                                    
                                     Row=len(Number_Row)
-                                    Number_Row_Count=10
                                     ei=0
                                     while ei<Row:
                                             Number_Row2=Number_Row[ei:ei+2]
@@ -266,7 +268,7 @@ class compression:
                                                     Number_Row_Count_str=str(Number_Row_Count)
                                                    
                                             elif Number_Row2[0:1]==Number_Row_Count_str2[1:2] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                    Number_Row1=Number_Row1+Number_Row2#check order 1:2
+                                                    Number_Row1=Number_Row1+Number_Row2[1:2]+Number_Row2[0:1]# change order 1:2, 0:1
                                                     Number_Row_Count=Number_Row_Count+1
                                                     Number_Row_Count_str=str(Number_Row_Count)
 
