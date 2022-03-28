@@ -226,7 +226,7 @@ class compression:
                                     	Equal_info_between_of_the_cirlce_of_the_file="1"+Equal_info_between_of_the_cirlce_of_the_file
                                     	SpinS=1
 
-                                    if Circle_times2>=(2**48)-3:
+                                    if Circle_times2>=(2**32)-3:
                                             compress_or_not_compress=2
                                             
                                     Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
@@ -315,7 +315,7 @@ class compression:
                                                             Number_Row9=Number_Row6  
                                                      
                                                         
-                                                            if   Number_Row8!=Number_Row_Count_str3 and Number_Row8!=Number_Row_Count_str3 and Number_Row8[0:1]!=Number_Row8[1:2]:  
+                                                            if   Number_Row8!=Number_Row_Count_str3 and Number_Row8==Number_Row_Count_str3 and Number_Row8[0:1]!=Number_Row8[1:2]:  
                                                                  Number_Row5=len(Number_Row1)
                                                                  Number_Row1=Number_Row1[:Number_Row5-2]+Number_Row8
                                                         
@@ -328,7 +328,7 @@ class compression:
                                                         Number_Row9=Number_Row6  
                                                      
                                                         
-                                                        if   Number_Row8!=Number_Row_Count_str3 and Number_Row8!=Number_Row_Count_str3 and Number_Row8[0:1]!=Number_Row8[1:2] and ei!=0:
+                                                        if   Number_Row8!=Number_Row_Count_str3 and Number_Row8==Number_Row_Count_str3 and Number_Row8[0:1]!=Number_Row8[1:2] and ei!=0:
                                                               Number_Row5=len(Number_Row1)
                                                               Number_Row1=Number_Row1[:Number_Row5-2]+Number_Row8 
                                             
