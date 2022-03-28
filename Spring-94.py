@@ -308,28 +308,29 @@ class compression:
 
                                                     else:
                                                          Number_Row1=Number_Row1+Number_Row6
+                                                        
                                                     
-                                                    if Number_Row2[1:2]!=Number_Row_Count_str3[1:2]:  
-                                                        Number_Row7=Number_Row6[1:2]+Number_Row6[0:1]     
-                                                        Number_Row8=Number_Row6  
+                                                         if Number_Row2[1:2]!=Number_Row_Count_str3[1:2]:
+                                                            Number_Row8=Number_Row6[1:2]+Number_Row6[0:1]     
+                                                            Number_Row9=Number_Row6  
                                                      
                                                         
-                                                        if   Number_Row7!=Number_Row_Count_str3 and Number_Row7[0:1]!=Number_Row7[1:2]:  
-                                                              Number_Row5=len(Number_Row1)
-                                                              Number_Row1=Number_Row1[:Number_Row5-2]+Number_Row7
+                                                            if   Number_Row8!=Number_Row_Count_str3 and Number_Row8!=Number_Row_Count_str3 and Number_Row8[0:1]!=Number_Row8[1:2]:  
+                                                                 Number_Row5=len(Number_Row1)
+                                                                 Number_Row1=Number_Row1[:Number_Row5-2]+Number_Row8
                                                         
                                                                                                                                                    
                                                                                                                                                                                      
                                             else:
                                                  Number_Row1=Number_Row1+Number_Row6        
-                                                 if Number_Row2[1:2]!=Number_Row_Count_str3[1:2]:  
-                                                        Number_Row7=Number_Row6[1:2]+Number_Row6[0:1]     
-                                                        Number_Row8=Number_Row6  
+                                                 if Number_Row2[1:2]!=Number_Row_Count_str3[1:2]: 
+                                                        Number_Row8=Number_Row6[1:2]+Number_Row6[0:1]     
+                                                        Number_Row9=Number_Row6  
                                                      
                                                         
-                                                        if   Number_Row7!=Number_Row_Count_str3 and Number_Row7[0:1]!=Number_Row7[1:2]:  
+                                                        if   Number_Row8!=Number_Row_Count_str3 and Number_Row8!=Number_Row_Count_str3 and Number_Row8[0:1]!=Number_Row8[1:2]:  
                                                               Number_Row5=len(Number_Row1)
-                                                              Number_Row1=Number_Row1[:Number_Row5-2]+Number_Row7  
+                                                              Number_Row1=Number_Row1[:Number_Row5-2]+Number_Row8 
                                             
                                                     
                                                     
