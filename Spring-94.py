@@ -237,12 +237,7 @@ class compression:
                                     #We need to try predict information. We try to predict number from 10-99.
                                     
                                     Number_Row1=""
-                                    Number_Row3=""
-                                    Number_Row4=""
-                                    Number_Row5=""
-                                    Number_Row6=""
                                     Number_Row_Count=10
-                                    Number_Row_Count2=0
                                     Number_Row=str(Number_of_the_file)
                                     Number_Row_Count=Number_Row_Count+1
                                     Number_Row_Count_str=str(Number_Row_Count)
@@ -255,77 +250,45 @@ class compression:
                                             Number_Row2=Number_Row[ei:ei+2]
                                             Number_Row_Count_str=str(Number_Row_Count)
                                             Number_Row_Count_str2=Number_Row_Count_str[1:2]+Number_Row_Count_str[0:1]
-                                            
-                                            Number_Row_Count2=Number_Row_Count
 
-                                            Number_Row4=Number_Row2
-
-                                            
-                                                    
-                                            
-                                            if Number_Row2[0:2]==Number_Row_Count_str and ei!=0:
-                                                
-                                                    Number_Row6=Number_Row1+Number_Row2[0:1]#check two numbers of predict, left 0:1 and delete the last one.
-
-                                                    Number_Row3=Number_Row1+Number_Row2[0:1]+Number_Row2[2:3]
-                                                    
-                                                    Number_Row_Count=Number_Row_Count+1
-                                                    Number_Row_Count_str=str(Number_Row_Count)
-                                                
-                                            else:
-                                                    Number_Row6=Number_Row1+Number_Row2
-
-                                                    Number_Row3=Number_Row1+Number_Row2
-                                                    
+                                            if Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
+                                                    Number_Row1=Number_Row1+Number_Row2[1:2]+Number_Row2[0:1]#change order
                                                     Number_Row_Count=Number_Row_Count+1
                                                     Number_Row_Count_str=str(Number_Row_Count)
 
 
-                                            if Number_Row6[0:1]==Number_Row_Count_str[0:1] and ei!=0:
-
-                                                    Number_Row_Count4=str(Number_Row_Count2)
-                                                    Number_Row5=Number_Row6[0:1]+Number_Row_Count4[1:2]
+                                            elif Number_Row2[1:2]==Number_Row_Count_str[1:2] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
+                                                    Number_Row1=Number_Row1+Number_Row2#check 1:2
+                                                    Number_Row_Count=Number_Row_Count+1
+                                                    Number_Row_Count_str=str(Number_Row_Count)
                                                     
-                                                    if Number_Row4!=Number_Row5:
-                                                            Number_Row7=0
-                                                            Number_Row7=int(Number_Row2[0:1])
-                                                            if Number_Row7==9:
-                                                                  Number_Row8=1
+                                            elif Number_Row2[0:1]==Number_Row_Count_str2[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
+                                                    Number_Row1=Number_Row1+Number_Row2[1:2]+Number_Row2[0:1]#change order of the change order
+                                                    Number_Row_Count=Number_Row_Count+1
+                                                    Number_Row_Count_str=str(Number_Row_Count)
+                                                   
+                                            elif Number_Row2[0:1]==Number_Row_Count_str2[1:2] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
+                                                    Number_Row1=Number_Row1+Number_Row2[1:2]+Number_Row2[0:1]# change order 1:2, 0:1
+                                                    Number_Row_Count=Number_Row_Count+1
+                                                    Number_Row_Count_str=str(Number_Row_Count)
 
-                                                            elif Number_Row7!=9:
-                                                                  Number_Row8=Number_Row7+1
-                                                                  Number_Row9=str(Number_Row8)
-                                                            
-                                                            Number_Row1=Number_Row1=Number_Row9+Number_Row2[1:2]
-                                                            
-                                                                   
-                                                            
-                                                            
-
-
-                                                    elif Number_Row4==Number_Row5:
-                                                            Number_Row1=Number_Row1+Number_Row2[0:1]
-
-
+                                            elif ei==0:
+                                                    Number_Row1=Number_Row1+Number_Row2
+                                                    Number_Row_Count=Number_Row_Count+1
+                                                    Number_Row_Count_str=str(Number_Row_Count)
+                                            
+                                                    
+                                            
+                                            elif Number_Row2[0:2]==Number_Row_Count_str and ei!=0:
+                                                
+                                                    Number_Row1=Number_Row1+Number_Row2[0:1]#check two numbers of predict, left 0:1 and delete the last one.
+                                                    Number_Row_Count=Number_Row_Count+1
+                                                    Number_Row_Count_str=str(Number_Row_Count)
+                                                
                                             else:
-
-                                                            Number_Row7=0
-                                                            Number_Row7=int(Number_Row2[0:1])
-                                                            if Number_Row7==9:
-                                                                  Number_Row8=1
-
-                                                            elif Number_Row7!=9:
-                                                                  Number_Row8=Number_Row7+1
-                                                                  Number_Row9=str(Number_Row8)
-                                                            
-                                                            Number_Row1=Number_Row1=Number_Row9+Number_Row2[1:2]
-
-                                            
-
-                                           
-
-                                            
-                                                    
+                                                    Number_Row1=Number_Row1+Number_Row2
+                                                    Number_Row_Count=Number_Row_Count+1
+                                                    Number_Row_Count_str=str(Number_Row_Count)
                                             
                                                     
                                                     
