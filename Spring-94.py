@@ -314,13 +314,22 @@ class compression:
                                                         Number_Row8=Number_Row6  
                                                      
                                                         
-                                                        if   Number_Row7!=Number_Row_Count_str3 and Number_Row8!=Number_Row_Count_str3 and Number_Row7[0:1]!=Number_Row7[1:2]:  
-                                                           compress_or_not_compress=2
+                                                        if   Number_Row7!=Number_Row_Count_str3 and Number_Row7[0:1]!=Number_Row7[1:2]:  
+                                                              Number_Row5=len(Number_Row1)
+                                                              Number_Row1=Number_Row1[:Number_Row5-2]+Number_Row7
                                                         
                                                                                                                                                    
                                                                                                                                                                                      
                                             else:
-                                                 Number_Row1=Number_Row1+Number_Row6    
+                                                 Number_Row1=Number_Row1+Number_Row6        
+                                                 if Number_Row2[1:2]!=Number_Row_Count_str3[1:2]:  
+                                                        Number_Row7=Number_Row6[1:2]+Number_Row6[0:1]     
+                                                        Number_Row8=Number_Row6  
+                                                     
+                                                        
+                                                        if   Number_Row7!=Number_Row_Count_str3 and Number_Row7[0:1]!=Number_Row7[1:2]:  
+                                                              Number_Row5=len(Number_Row1)
+                                                              Number_Row1=Number_Row1[:Number_Row5-2]+Number_Row7  
                                             
                                                     
                                                     
