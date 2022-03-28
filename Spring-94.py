@@ -298,9 +298,12 @@ class compression:
                                                     
                                                     Number_Row7=Number_Row6[0:1]+Number_Row_Count_str3[1:2]
                                                     if Number_Row7!=Number_Row_Count_str3 and Number_Row7[0:1]!=Number_Row7[1:2]:
-                                                            ccc=2
+                                                            compress_or_not_compress=2
                                                     elif  Number_Row7[0:1]==Number_Row7[1:2] or Number_Row_Count_str3[0:1]==Number_Row8[0:1]:
                                                            Number_Row1=Number_Row1+Number_Row_Count_str3#22...
+                                                           if Number_Row_Count_str3[0:1]!=Number_Row_Count_str3[1:2]:
+                                                                   compress_or_not_compress=2
+                                                           
                                                            
 
                                                     else:
