@@ -328,7 +328,7 @@ class compression:
                                                         Number_Row9=Number_Row6  
                                                      
                                                         
-                                                        if   Number_Row8!=Number_Row_Count_str3 and Number_Row8!=Number_Row_Count_str3 and Number_Row8[0:1]!=Number_Row8[1:2]:  
+                                                        if   Number_Row8!=Number_Row_Count_str3 and Number_Row8!=Number_Row_Count_str3 and Number_Row8[0:1]!=Number_Row8[1:2] and ei!=0:
                                                               Number_Row5=len(Number_Row1)
                                                               Number_Row1=Number_Row1[:Number_Row5-2]+Number_Row8 
                                             
