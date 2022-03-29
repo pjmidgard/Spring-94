@@ -296,6 +296,7 @@ class compression:
                                                             compress_or_not_compress=2
                                                     elif  Number_Row7[0:1]==Number_Row7[1:2] or Number_Row_Count_str3[0:1]==Number_Row8[0:1]:
                                                            Number_Row1=Number_Row1+Number_Row_Count_str3#22...
+                                                           
                                                            if Number_Row_Count_str3[0:1]!=Number_Row_Count_str3[1:2] or Number_Row7[0:1]==Number_Row7[1:2]:
                                                                    compress_or_not_compress=2
                                                            
@@ -303,10 +304,12 @@ class compression:
 
                                                     else:
                                                          Number_Row1=Number_Row1+Number_Row6
+                                                        
                                                          
                                                             
                                             else:
                                                  Number_Row1=Number_Row1+Number_Row6
+                                                
                                                  if Number_Row6!=Number_Row3:
                                                          compress_or_not_compress=2
                                                                  
@@ -328,6 +331,8 @@ class compression:
 
                                     Number_Row3=Number_Row1
                                     Number_Row_int=int(Number_Row3)
+                                   
+                             
                                     Equal_info_between_of_the_cirlce_of_the_file_11=bin(Number_Row_int)[2:]
 
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_11
