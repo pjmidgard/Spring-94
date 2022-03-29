@@ -276,8 +276,7 @@ class compression:
 
                                             elif ei==0:
                                                     Number_Row6=Number_Row2
-                                                    Number_Row_Count=Number_Row_Count+1
-                                                    Number_Row_Count_str=str(Number_Row_Count)
+                                                    
                                             
                                                     
                                             
@@ -342,7 +341,7 @@ class compression:
                                     #print(lenfS)
                                     #print(Deep3)
                                     if lenf6==lenfS:
-                                            Deep3=lenfS
+                                            Deep3=lenf
                                             
                                     if compress_or_not_compress==2 and Circle_times2==0:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
