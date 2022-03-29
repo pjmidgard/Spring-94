@@ -257,13 +257,13 @@ class compression:
                                             Number_Row_Count_str2=Number_Row_Count_str[1:2]+Number_Row_Count_str[0:1]
 
                                             if Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                    Number_Row6=Number_Row2
+                                                    Number_Row6=Number_Row2[1:2]+Number_Row2[0:1]
                                                    
                                                             
 
 
                                             elif Number_Row2[1:2]==Number_Row_Count_str[1:2] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                    Number_Row6=Number_Row2
+                                                     Number_Row6=Number_Row2[1:2]+Number_Row2[0:1]
                                                     
                                                     
                                             elif Number_Row2[0:1]==Number_Row_Count_str2[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
@@ -308,9 +308,10 @@ class compression:
                                                          
                                                             
                                             else:
+                                                 Number_Row4=Number_Row6[1:2]+Number_Row6[0:1]   
                                                  Number_Row1=Number_Row1+Number_Row6
                                                 
-                                                 if Number_Row6!=Number_Row3:
+                                                 if Number_Row6!=Number_Row3 and Number_Row3!=Number_Row4:
                                                          compress_or_not_compress=2
                                                                  
                                             
