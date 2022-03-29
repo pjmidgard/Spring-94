@@ -319,6 +319,9 @@ class compression:
                                                     
                                             ei=ei+2
                                             
+                                            
+                                            
+                                            
                                             Number_Row_Count=Number_Row_Count+1
                                             if Number_Row_Count==99:
                                                             Number_Row_Count=10
@@ -345,10 +348,11 @@ class compression:
                               
                                     
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                    #print(lenfS)
+                                   
+                                
                                     #print(Deep3)
                                     if lenf6==lenfS:
-                                            Deep3=lenf
+                                            Deep3=lenfS
                                             
                                     if compress_or_not_compress==2 and Circle_times2==0:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
