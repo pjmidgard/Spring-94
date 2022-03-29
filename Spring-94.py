@@ -330,6 +330,7 @@ class compression:
                                     
 
                                     Number_Row3=Number_Row1
+                                    
                                     Number_Row_int=int(Number_Row3)
                                    
                              
