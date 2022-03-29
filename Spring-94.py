@@ -363,6 +363,7 @@ class compression:
 
 
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
+                                            
                                     	   
                                             Equal_info_between_of_the_cirlce_of_the_file0=bin(lenf7)[2:]
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file0)
@@ -485,8 +486,6 @@ class compression:
 
                                                 sda10=Equal_info_between_of_the_cirlce_of_the_file[0:48]
                                                 Deep5 = int(sda10, 2)
-                                                Deep5=Deep5+2
-                                                Deep4=Deep5-1
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                                 Deep7=Deep5-2
@@ -495,8 +494,7 @@ class compression:
                                                 T = int(Times_6, 2)
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                print("Deep: ")
-                                                print(Deep7-25)
+                                                
                                                 
                                         if   Circle_times2>0:
                                         	Translate_info_Decimal_2=0
@@ -505,25 +503,9 @@ class compression:
     
                                         if C==1 and T!=0:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
-                                                lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                Number_add_plus_one=Equal_info_between_of_the_cirlce_of_the_file[lenf6-Deep4:lenf6-1]
-                                                Prime_Not=Equal_info_between_of_the_cirlce_of_the_file[lenf6-1:lenf6]
-                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[0:lenf6-Deep4]
-                                        
+                                                #Extract
                                                 
-                                                Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
-                                                Number_add_plus_one_2 = int(Number_add_plus_one, 2)
-                                                Prime_Not = int(Prime_Not, 2)
-                                                Hole_Number_information=(2**Deep5)-1
-                                                add_ones_together=Hole_Number_information+Number_add_plus_one_2
-                                                Number_of_the_file=Number_of_the_file
-                                                
-                                                if Prime_Not==1:
-                                                        Number_of_the_file=Number_of_the_file+(2**Deep7)-1
-                                                        Number_of_the_file=Number_of_the_file+add_ones_together+1
-
-                                                else:
-                                                        Number_of_the_file=Number_of_the_file+add_ones_together
+                                                Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file
                                                 
                                        
                                     Times_6=Number_add_plus_one
@@ -553,37 +535,22 @@ class compression:
                                         
                                         if  Circle_times2==T:
                                         	   
-                                            if C==1 and T==0:
-                                            	Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file
-                                            	lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                            	add_bits=""
-                                            	count_bits=8-lenf%8
-                                            	z=0
-                                            	if count_bits!=0:
-                                            	        if count_bits!=8:
-                                            	            while z<count_bits:
-                                            	            	add_bits="0"+add_bits
-                                            	            	z=z+1
-                                            	Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
                                         
                                             if C==1 and T!=0:
  
-                                            	Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[3:]
+                                            	Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[1:]
                                             	lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	#print(lenf14)
                                             	lenf16=lenf14%8
-                                            	if lenf16!=0 or lenf14>=((2**40)-1)*8 or Corrupted==1:
-
-                                            		print("file corrupted")
-                                            		raise SystemExit
-                                            		
+                                            	
                                             	
                                             	lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	add_bits=""
-                                            	count_bits=8-lenf%8
+                                            	count_bits=(Deep5*8)-lenf%(Deep5*8)
                                             	z=0
                                             	if count_bits!=0:
-                                            	        if count_bits!=8:
+                                            	        if count_bits!=(Deep5*8):
                                             	            while z<count_bits:
                                             	            	add_bits="0"+add_bits
                                             	            	z=z+1
