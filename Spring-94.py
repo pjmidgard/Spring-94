@@ -265,6 +265,16 @@ class compression:
 
 
     
+                                            elif Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
+                                                    Number_Row6=Number_Row2
+                                                    Number_Row1=Number_Row1+Number_Row6
+                                                   
+                                                            
+
+
+                                            elif Number_Row2[1:2]==Number_Row_Count_str[1:2] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
+                                                     Number_Row6=Number_Row2
+                                                     Number_Row1=Number_Row1+Number_Row6
                                            
                                             elif Number_Row2[0:2]==Number_Row_Count_str and ei!=0:#where information
                                                 
@@ -312,7 +322,7 @@ class compression:
                               
                                     
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                    if Deep3==lenfS:
+                                    if Deep3<=lenfS:
                                         Deep3=lenfS
 
                                  
