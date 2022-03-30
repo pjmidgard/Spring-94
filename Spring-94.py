@@ -255,49 +255,30 @@ class compression:
                                             Number_Row_Count_str=str(Number_Row_Count)
                                             Number_Row_Count_str2=Number_Row_Count_str[1:2]+Number_Row_Count_str[0:1]
 
-                                            if Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
+
+                                            if ei==0:
+                                                    Number_Row6=Number_Row2
+                                                    Number_Row1=Number_Row1+Number_Row6
+                                                    
+
+                                            elif Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row6=Number_Row2[1:2]+Number_Row2[0:1]
+                                                    Number_Row1=Number_Row1+Number_Row6
                                                    
                                                             
 
 
                                             elif Number_Row2[1:2]==Number_Row_Count_str[1:2] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                      Number_Row6=Number_Row2[1:2]+Number_Row2[0:1]
+                                                     Number_Row1=Number_Row1+Number_Row6
                                                     
-                                                    
-                                            elif Number_Row2[0:1]==Number_Row_Count_str2[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                    Number_Row6=Number_Row2
-                                                    
-                                                   
-                                            elif Number_Row2[0:1]==Number_Row_Count_str2[1:2] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                    Number_Row6=Number_Row2 
-                                                    
-
-                                            elif ei==0:
-                                                    Number_Row6=Number_Row2
-                                                    
-                                            
-                                                    
-                                            
+                                           
                                             elif Number_Row2[0:2]==Number_Row_Count_str and ei!=0:
                                                 
                                                     Number_Row6=Number_Row2[0:1]#check two numbers of predict, left 0:1 and delete the last one.
-                                                    
+                                                    Number_Row1=Number_Row1+Number_Row6
                                                 
-                                            else:
-                                                    Number_Row6=Number_Row2
-                                                    
-
-                                            if Number_Row_Count_str3[0:1]==Number_Row6[0:1] and ei!=0:
-                                                    
-                                                    Number_Row7=Number_Row6[0:1]+Number_Row_Count_str3[1:2]
-                                                    if Number_Row7!=Number_Row_Count_str3:
-                                                            compress_or_not_compress=2
-                                                    
-                                                           
-
-                                                    else:
-                                                         Number_Row1=Number_Row1+Number_Row6
+                                        
                                                         
                                                          
                                                             
@@ -305,9 +286,7 @@ class compression:
                                                  Number_Row4=Number_Row6[1:2]+Number_Row6[0:1]   
                                                  Number_Row1=Number_Row1+Number_Row6
                                                 
-                                                 if Number_Row6!=Number_Row3 and Number_Row3!=Number_Row4:
-                                                         compress_or_not_compress=2
-                                                                 
+                                                 
                                             
                                                     
                                                     
@@ -339,7 +318,7 @@ class compression:
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                    
                                 
-                                    #print(Deep3)
+                                
                                     if lenf6==lenfS:
                                             Deep3=lenfS
                                             
