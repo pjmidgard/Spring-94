@@ -502,62 +502,239 @@ class compression:
                                    
 
                                     if i==2:
-                                        Make_togher=""
-                                        Make_togher=Times_6
-                                        Number_add_plus_one=""
-                                        add_bits=""
-                                        if C==1 and T!=0:
-                                                Circle_times2=Circle_times2+1
 
-                                        lenf9=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                        #print(Circle_times2)
-                                        
-                                        
-                                        if  Circle_times2==T:
-                                        	   
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
-                                        
-                                            if C==1 and T!=0:
- 
-                                            	Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[1:]
-                                            	lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                            	#print(lenf14)
-                                            	lenf16=lenf14%8
-                                            	
-                                            	
-                                            	lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                            	add_bits=""
-                                            	count_bits=(Deep5*8)-lenf%(Deep5*8)
-                                            	z=0
-                                            	if count_bits!=0:
-                                            	        if count_bits!=(Deep5*8):
-                                            	            while z<count_bits:
-                                            	            	add_bits="0"+add_bits
-                                            	            	z=z+1
-                                            	Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
-
-                                            L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                         
-                                            n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
-                                            width_bits=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                            width_bits=(width_bits//8)*2
-                                            width_bits=str(width_bits)
-                                            width_bits="%0"+width_bits+"x"
-                                            width_bits3=binascii.unhexlify(width_bits % n)
-                                            width_bits2=len(width_bits3)
-
-                                            add_bitszzza=""
-                                            add_bitszs=""
-                                            Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
-                                             
-                                            with open(nameas, "wb") as f2:
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=""
+                                      
+                                            Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file_2
                                             
+                                            lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+
+                                            add_bits=""
+
+                                            Times_6=""
+
+                                            #Extract
+
+                                            sda10=""
+                                            Translate_info_Decimal=""
+                                          
+                                            Number_add_plus_one=""
+                                            Prime_Not=""
+                                            Times_6=""
+                                        
+                                            Number_of_the_file=0
+                                            Prime_Not=0
+                                         
+                                            if C==1:
+                                                if   Circle_times2==0:
+
+                                                        Translate_info_Decimal=Equal_info_between_of_the_cirlce_of_the_file[0:8]
+                                                        Translate_info_Decimal_2 = int(Translate_info_Decimal, 2)
+                                                        if Translate_info_Decimal_2>7:
+                                                                Corrupted=1
+                                                        Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[8:]
+                                                        lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+
+                                                        sda10=Equal_info_between_of_the_cirlce_of_the_file[0:48]
+                                                        Deep5 = int(sda10, 2)
+                                                        Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
+                                                        lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+                                                        
+                                                        Times_6=Equal_info_between_of_the_cirlce_of_the_file[0:48]
+                                                        T = int(Times_6, 2)
+                                                        Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
+                                                        lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+                                                        
+                                                        
+                                                if   Circle_times2>0:
+                                                        Translate_info_Decimal_2=0
+                                                
+                                                        
+            
+                                                if C==1 and T!=0:
+                                                        Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
+                                                        #Extract
+                                                        Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
+                                                            
+                                                        
+                                                        
+                                                            
+                                                        Number_Row1=""
+                                                        Number_Row6=""
+                                                        Number_Row_Count=10
+                                                        Number_Row_Count_str3=""
+                                                        Number_Row=str(Number_of_the_file)
+                                                        Number_Row_Count=Number_Row_Count+1
+                                                        Number_Row_Count_str=str(Number_Row_Count)
+                                                    
+                                                            
+                                                            
+                                                        Row=len(Number_Row)
+                                                        ei=0
+                                                        Spin_bits=0
+                                                        while ei<Row:
+                                                                    
+                                                                    Number_Row2=Number_Row[ei:ei+1]
+                                                                    Number_Row4=Number_Row[ei:ei+2]
+                                                                    Number_Row8=Number_Row2[ei+2:ei+3]
+                                                                    Number_Row3=Number_Row2
+                                                                    Number_Row_Count_str3=str(Number_Row_Count)
+                                                                    Number_Row_Count_str=str(Number_Row_Count)
+                                                                    Number_Row_Count_str2=Number_Row_Count_str[1:2]+Number_Row_Count_str[0:1]
+
+
+                                                                    if ei==0:
+                                                                            Number_Row6=Number_Row2
+                                                                            Number_Row1=Number_Row1+Number_Row6
+                                                                    
+                                                                            pin_bits=2
+                                                                            ei=ei+1
+                                                                    
+                                                                    
+                                                                    
+                                                            
+                                                                    elif Number_Row2[0:1]!=Number_Row_Count_str[0:1] and Number_Row2[0:1]==Number_Row_Count_str[1:2] and ei!=0:
+                                                                
+                                                                            Number_Row7=Number_Row2[0:1]
+                                                                            Spin_bits=1
+                                                                            ei=ei+1
+
+                                                                    elif Number_Row2[0:1]!=Number_Row_Count_str[0:1] and Number_Row2[0:1]!=Number_Row_Count_str[1:2] and ei!=0:
+                                                                
+                                                                            Number_Row7=Number_Row2[0:1]
+                                                                            Spin_bits=3
+                                                                            
+                                                                            ei=ei+1
+
+                                                                    elif Number_Row2[0:1]==Number_Row_Count_str[0:1] and ei!=0:
+                                                                
+                                                                            Number_Row6=Number_Row_Count_str
+                                                                            Number_Row1=Number_Row1+Number_Row6
+                                                                            Spin_bits=0
+                                                                            ei=ei+1
+
+                                                                    
+                                                                    if Spin_bits==1:
+                                                                            Number_Row2=Number_Row[ei:ei+1]
+                                                                            Number_Row6=Number_Row2
+                                                                            Number_Row1=Number_Row1+Number_Row6+Number_Row7
+                                                                            pin_bits=0
+                                                                            ei=ei+1
+                                                                    if Spin_bits==3:
+                                                                            Number_Row2=Number_Row[ei:ei+1]
+
+                                                                            if Number_Row2[0:1]==Number_Row_Count_str[0:1] and ei!=0:
+                                                                
+                                                                                    Number_Row8=Number_Row2[0:1]
+                                                                                    
+                                                                                    Number_Row8=Number_Row2
+                                                                                    Number_Row1=Number_Row1+Number_Row8+Number_Row7
+                                                                                    pin_bits=0
+                                                                                    ei=ei+1
+
+                                                                            if Number_Row2[0:1]!=Number_Row_Count_str[0:1] and ei!=0:
+                                                                
+                                                                                    Number_Row6=Number_Row2[0:1]
+                                                                                    
+                                                                                    Number_Row6=Number_Row2
+                                                                                    Number_Row1=Number_Row1+Number_Row7+Number_Row6
+                                                                                    pin_bits=0
+                                                                                    ei=ei+1
+                                                                    if Spin_bits==2:
+                                                                            Number_Row2=Number_Row[ei:ei+1]
+                                                                            Number_Row6=Number_Row2
+                                                                            Number_Row1=Number_Row1+Number_Row6
+                                                                            pin_bits=0
+                                                                            ei=ei+1
+                                                                            
+                                                                    Number_Row_Count=Number_Row_Count+1
+                                                                    if Number_Row_Count==99:
+                                                                                    Number_Row_Count=10
+                                                                    Number_Row_Count_str=str(Number_Row_Count)
+                                                                        
+                                                        Number_Row3=Number_Row1
+                                                        #print(Number_Row3)
+                                                        
+                                                        Number_Row_int=int(Number_Row3)
+                                                           
+                                                     
+                                                        Equal_info_between_of_the_cirlce_of_the_file_11=bin(Number_Row_int)[2:]
+
+                                                        Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_11
+                                                                        
+                                               
+                                            Times_6=Number_add_plus_one
+                                            Number_add_plus_one=""
                                               
-                                            	f2.write(width_bits3)
-                                            x2 = time()
-                                            x3=x2-x
-                                            xs=float(x3)
-                                            return print(x3)
+                                            #####################################################################################################################################################
+                                           
+                                            Prime_Not=""
+                                            
+                                            
+
+                                            #Extract
+                                            
+                                             
+                                            Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
+                                           
+
+                                            if i==2:
+                                                Make_togher=""
+                                                Make_togher=Times_6
+                                                Number_add_plus_one=""
+                                                add_bits=""
+                                                if C==1 and T!=0:
+                                                        Circle_times2=Circle_times2+1
+
+                                                lenf9=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                #print(Circle_times2)
+                                                
+                                                
+                                                if  Circle_times2==T:
+                                                           
+                                                    Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
+                                                
+                                                    if C==1 and T!=0:
+         
+                                                        Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[1:]
+                                                        lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                        #print(lenf14)
+                                                        lenf16=lenf14%8
+                                                        
+                                                        
+                                                        lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                        add_bits=""
+                                                        count_bits=8-lenf%8
+                                                        z=0
+                                                        if count_bits!=0:
+                                                                if count_bits!=8:
+                                                                    while z<count_bits:
+                                                                        add_bits="0"+add_bits
+                                                                        z=z+1
+                                                        Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
+
+                                                    L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                 
+                                                    n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
+                                                    width_bits=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                    width_bits=(width_bits//8)*2
+                                                    width_bits=str(width_bits)
+                                                    width_bits="%0"+width_bits+"x"
+                                                    width_bits3=binascii.unhexlify(width_bits % n)
+                                                    width_bits2=len(width_bits3)
+
+                                                    add_bitszzza=""
+                                                    add_bitszs=""
+                                                    Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
+                                                     
+                                                    with open(nameas, "wb") as f2:
+                                                    
+                                                      
+                                                        f2.write(width_bits3)
+                                                    x2 = time()
+                                                    x3=x2-x
+                                                    xs=float(x3)
+                                                    return print(x3)
    
 d=compression()
 
