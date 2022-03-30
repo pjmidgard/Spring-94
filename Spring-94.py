@@ -263,17 +263,8 @@ class compression:
                                                     Number_Row1=Number_Row1+Number_Row6
                                                     
 
-                                            elif Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                    Number_Row6=Number_Row2
-                                                    Number_Row1=Number_Row1+Number_Row6
-                                                   
-                                                            
 
-
-                                            elif Number_Row2[1:2]==Number_Row_Count_str[1:2] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                     Number_Row6=Number_Row2
-                                                     Number_Row1=Number_Row1+Number_Row6
-                                                    
+    
                                            
                                             elif Number_Row2[0:2]==Number_Row_Count_str and ei!=0:#where information
                                                 
@@ -606,8 +597,7 @@ class compression:
                                                         Number_Row6=""
                                                         Number_Row_Count=10
                                                         Number_Row_Count_str3=""
-                                                        Number_Row=str(Number_of_the_file)
-                                                        Number_Row_Count=Number_Row_Count+1
+                                                        Number_Row=str(Number_of_the_file
                                                         Number_Row_Count_str=str(Number_Row_Count)
                                                     
                                                             
