@@ -322,7 +322,7 @@ class compression:
                               
                                     
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                    if Deep3<=lenfS:
+                                    if lenf6==lenfS:
                                         Deep3=lenfS
 
                                  
