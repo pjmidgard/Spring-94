@@ -593,7 +593,7 @@ class compression:
                                                         Number_Row6=""
                                                         Number_Row_Count=10
                                                         Number_Row_Count_str3=""
-                                                        Number_Row=str(Number_of_the_file
+                                                        Number_Row=str(Number_of_the_file)
                                                         Number_Row_Count_str=str(Number_Row_Count)
                                                     
                                                             
