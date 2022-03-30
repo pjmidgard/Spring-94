@@ -241,7 +241,6 @@ class compression:
                                     Number_Row_Count=10
                                     Number_Row_Count_str3=""
                                     Number_Row=str(Number_of_the_file)
-                                    Number_Row_Count=Number_Row_Count+1
                                     Number_Row_Count_str=str(Number_Row_Count)
                             
                                     
@@ -292,14 +291,9 @@ class compression:
                                             if Number_Row_Count_str3[0:1]==Number_Row6[0:1] and ei!=0:
                                                     
                                                     Number_Row7=Number_Row6[0:1]+Number_Row_Count_str3[1:2]
-                                                    if Number_Row7!=Number_Row_Count_str3 and Number_Row7[0:1]!=Number_Row7[1:2]:
+                                                    if Number_Row7!=Number_Row_Count_str3:
                                                             compress_or_not_compress=2
-                                                    elif  Number_Row7[0:1]==Number_Row7[1:2] or Number_Row_Count_str3[0:1]==Number_Row8[0:1]:
-                                                           Number_Row1=Number_Row1+Number_Row_Count_str3#22...
-                                                           
-                                                           if Number_Row_Count_str3[0:1]!=Number_Row_Count_str3[1:2] or Number_Row7[0:1]==Number_Row7[1:2]:
-                                                                   compress_or_not_compress=2
-                                                           
+                                                    
                                                            
 
                                                     else:
@@ -325,12 +319,7 @@ class compression:
                                             Number_Row_Count=Number_Row_Count+1
                                             if Number_Row_Count==99:
                                                             Number_Row_Count=10
-                                            Number_Row_Count_str=str(Number_Row_Count)
-                                            if Number_Row_Count_str[0:1]==Number_Row_Count_str[1:2]:
-                                                Number_Row_Count=Number_Row_Count+1
-                                                if Number_Row_Count==99:
-                                                        Number_Row_Count=10
-                                                        Number_Row_Count_str=str(Number_Row_Count)
+                                                            Number_Row_Count_str=str(Number_Row_Count)
                                     
 
                                     Number_Row3=Number_Row1
