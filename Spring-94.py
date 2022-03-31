@@ -280,6 +280,7 @@ class compression:
                                                     
                                                     Number_Row_Count_str1=str(Number_Row_Count1)
                                                     Number_Row6=Number_Row_Count_str1
+                                                    Number_Row1=Number_Row1+Number_Row6
                                                     
                                                     
                                                             
@@ -302,6 +303,8 @@ class compression:
                                                     
                                                     Number_Row_Count_str1=str(Number_Row_Count1)
                                                     Number_Row6=Number_Row_Count_str1
+                                                    Number_Row1=Number_Row1+Number_Row6
+                                                    
                                                     
 
 
@@ -335,6 +338,7 @@ class compression:
                                                     
                                                     Number_Row_Count_str1=str(Number_Row_Count1)
                                                     Number_Row6=Number_Row_Count_str1
+                                                    Number_Row1=Number_Row1+Number_Row6
                                                     
                                                     
 
@@ -353,7 +357,7 @@ class compression:
                                             Number_Row_Count_str=str(Number_Row_Count)
                                                                                         
                                     
-                                    
+                                    Number_Row3=Number_Row1
                                     
                                     Number_Row_int=int(Number_Row3)
                                    
@@ -379,6 +383,7 @@ class compression:
                                     
                                    
                                     Circle_times2=Circle_times2+1
+                                    
                           
                                     Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
 
