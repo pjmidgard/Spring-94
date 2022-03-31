@@ -83,7 +83,7 @@ class compression:
                     Times_6=""
 
                     Translate_info_Decimal=""
-                    Number_Row14=""
+                    #Number_Row14=""
 
                     D=0
 
@@ -263,33 +263,73 @@ class compression:
                                                     Number_Row1=Number_Row1+Number_Row6
                                                     
 
-
-    
                                             elif Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                    Number_Row6=Number_Row2
-                                                    Number_Row1=Number_Row1+Number_Row6
-                                                   
+                                                    Number_Row_Count=Number_Row_Count-50
+                                                    if Number_Row_Count<=9:
+                                                            Number_Row_Count=90+Number_Row_Count
+                                                    
+                                                            
+                                                    
+                                                    Number_Row_Count_str1=str(Number_Row_Count)
+                                                    Number_Row6=Number_Row_Count_str1[0:1]+Number_Row2[1:2]
+                                                    Number_Row1=Number_Row1+Number_Row6[1:2]+Number_Row6[0:1]
+                                                    Number_Row8=Number_Row6[1:2]+Number_Row6[0:1]
+
+                                                    if Number_Row8[1:2]==Number_Row_Count_str[0:1]:
+                                                            compress_or_not_compress=2
+
+                                                    
                                                             
 
 
-                                            elif Number_Row2[1:2]==Number_Row_Count_str[1:2] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                     Number_Row6=Number_Row2
-                                                     Number_Row1=Number_Row1+Number_Row6
+                                            elif Number_Row2[1:2]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
+                                                    Number_Row_Count=Number_Row_Count-30
+                                                    if Number_Row_Count<=9:
+                                                            Number_Row_Count=90+Number_Row_Count#70-99
+                                                    
+                                                            
+                                                    
+                                                    Number_Row_Count_str1=str(Number_Row_Count)
+                                                    Number_Row6=Number_Row_Count_str1[0:1]+Number_Row2[1:2]
+                                                    Number_Row1=Number_Row1+Number_Row6
+                                                    Number_Row8=Number_Row6
+
+                                                    if Number_Row8[0:1]==Number_Row_Count_str[0:1]:
+                                                            compress_or_not_compress=2
+                                                            
+
+
+                                                    
                                            
-                                            elif Number_Row2[0:2]==Number_Row_Count_str and ei!=0:#where information
+                                            elif Number_Row2[0:2]==Number_Row_Count_str and ei!=0:
                                                 
                                                     Number_Row6=Number_Row2[0:1]#check two numbers of predict, left 0:1 and delete the last one.
                                                     Number_Row1=Number_Row1+Number_Row6
-                                                    Number_Row14=Number_Row14+bin(ei)[2:]
+                                                    #Number_Row14=Number_Row14+bin(ei)[2:]#where information
                                                 
                                         
                                                         
                                                          
                                                             
                                             else:
-                                                 Number_Row4=Number_Row6[1:2]+Number_Row6[0:1]   
-                                                 Number_Row1=Number_Row1+Number_Row6
-                                                
+                                                    Number_Row_Count1=int(Number_Row2)
+                                                    Number_Row_Count1=Number_Row_Count1-1
+                                                    if Number_Row_Count1<10 and Number_Row_Count1>-1:
+                                                            Number_Row_Count_str1=str(Number_Row_Count1)
+                                                            Number_Row_Count_str1="0"+Number_Row_Count_str1
+                                                            
+                                                   
+                                                    
+                                                    
+                                                    else:        
+                                                            Number_Row_Count_str1=str(Number_Row_Count1)
+                                                    if Number_Row_Count_str1<="-1":
+                                                            Number_Row_Count_str1="99"
+
+                                                            
+                                                    Number_Row6=Number_Row_Count_str1
+                                                    Number_Row1=Number_Row1+Number_Row6
+                                                    
                                                  
                                             
                                                     
@@ -322,10 +362,11 @@ class compression:
                               
                                     
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                   
+                                
+                                    #print(lenfS)
                                     if lenf6==lenfS:
-                                        Deep3=lenfS
-
-                                 
+                                            Deep3=lenfS
                                             
                                     if compress_or_not_compress==2 and Circle_times2==0:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
@@ -408,44 +449,45 @@ class compression:
                                                         while z<count_bits:
                                                          	add_bits9="0"+add_bits9
                                                          	z=z+1       
-                                    if   lenfS<=Deep3 or compress_or_not_compress==2:
+
+                                    #if   lenfS<=Deep3 or compress_or_not_compress==2:
                                     	   
 
 
                                         
-                                            lenf=len(Number_Row14)
+                                            #lenf=len(Number_Row14)
 
-                                            add_bits10=""
-                                            count_bits=8-lenf%8
-                                            z=0
-                                            if count_bits!=0:
-                                                if count_bits!=8:
-                                                        while z<count_bits:
-                                                         	add_bits10="0"+add_bits10
-                                                         	z=z+1   
+                                           # add_bits10=""
+                                            #count_bits=8-lenf%8
+                                            #z=0
+                                            #if count_bits!=0:
+                                                #if count_bits!=8:
+                                                        #while z<count_bits:
+                                                         	#add_bits10="0"+add_bits10
+                                                         	#z=z+1   
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)                                           
                                             Equal_info_between_of_the_cirlce_of_the_file_17=add_bits9+Equal_info_between_of_the_cirlce_of_the_file1+add_bits8+Equal_info_between_of_the_cirlce_of_the_file0+add_bits7+Equal_info_between_of_the_cirlce_of_the_file_29+add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
-                                    if   lenfS<=Deep3 or compress_or_not_compress==2:
+                                    #if   lenfS<=Deep3 or compress_or_not_compress==2:
                                                 
                                     		
-                                    		Number_Row14=add_bits10+Number_Row14
-                                    		L=len(Number_Row14)
-                                    		n = int(Number_Row14, 2)
-                                    		width_bits=len(Number_Row14)
-                                    		width_bits=(width_bits//8)*2
-                                    		width_bits=str(width_bits)
-                                    		width_bits="%0"+width_bits+"x"
-                                    		width_bits3=binascii.unhexlify(width_bits % n)
-                                    		width_bits2=len(width_bits3)
-                                    		add_bitszzza=""
-                                    		add_bitszs=""
-                                    		Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
+                                    		#Number_Row14=add_bits10+Number_Row14
+                                    		#L=len(Number_Row14)
+                                    		#n = int(Number_Row14, 2)
+                                    		#width_bits=len(Number_Row14)
+                                    		#width_bits=(width_bits//8)*2
+                                    		#width_bits=str(width_bits)
+                                    		#width_bits="%0"+width_bits+"x"
+                                    		#width_bits3=binascii.unhexlify(width_bits % n)
+                                    		#width_bits2=len(width_bits3)
+                                    		#add_bitszzza=""
+                                    		#add_bitszs=""
+                                    		#Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
 
                                     		
                                     		
-                                    		with open("Extra.bin", "wb") as f2:
-                                    			f2.write(width_bits3)
+                                    		#with open("Extra.bin", "wb") as f2:
+                                    			#f2.write(width_bits3)
                                     		
                                     	
                                     		
@@ -607,6 +649,7 @@ class compression:
                                                         Number_Row_Count=10
                                                         Number_Row_Count_str3=""
                                                         Number_Row=str(Number_of_the_file)
+                                                        Number_Row_Count=Number_Row_Count+1
                                                         Number_Row_Count_str=str(Number_Row_Count)
                                                     
                                                             
