@@ -312,23 +312,236 @@ class compression:
                                                          
                                                             
                                             else:
-                                                    Number_Row_Count1=int(Number_Row2)
-                                                    Number_Row_Count1=Number_Row_Count1-1
-                                                    if Number_Row_Count1<10 and Number_Row_Count1>-1:
-                                                            Number_Row_Count_str1=str(Number_Row_Count1)
-                                                            Number_Row_Count_str1="0"+Number_Row_Count_str1
+                                                    
+                                                    Number_Row_Count1=int(Number_Row2)     
+                                                    Number_Row_Count1=Number_Row_Count1+50
+                                                    Number_Row_Count2=Number_Row_Count1+40
+                                                    Number_Row_Count3=Number_Row_Count1+30
+                                                    if Number_Row_Count1>99:
+                                                            Number_Row_Count1=Number_Row_Count1-100#50-99
+                                                    if Number_Row_Count2>99:
+                                                            Number_Row_Count2=Number_Row_Count2-100#60-99
+                                                    if Number_Row_Count3>99:
+                                                            Number_Row_Count3=Number_Row_Count3-100#40-99
+                                                    
                                                             
-                                                   
                                                     
+                                                    Number_Row_Count_str1=str(Number_Row_Count1)
+                                                    Number_Row6=Number_Row_Count_str1
                                                     
-                                                    else:        
-                                                            Number_Row_Count_str1=str(Number_Row_Count1)
-                                                    if Number_Row_Count_str1<="-1":
-                                                            Number_Row_Count_str1="99"
+
+                                                    if Number_Row6[1:2]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row6[1:2]:
+                                                           
+
+                                                            Number_Row8=Number_Row6[1:2]+Number_Row6[0:1]
+                                                            
+
+                                                            if Number_Row8[1:2]==Number_Row_Count_str[0:1] and Number_Row8[0:1]!=Number_Row8[1:2]:
+                                                                    Number_Row_Count_str1=str(Number_Row_Count2)
+                                                                    Number_Row6=Number_Row_Count_str1
+                                                                    
+
+                                                                    Number_Row6=Number_Row8
+                                                                    
+
+                                                                    Number_Row8=Number_Row8+Number_Row6
+
+                                                                    if Number_Row8[1:2]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row8[1:2]:
+                                                                            Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                            Number_Row6=Number_Row_Count_str1
+                                                                            Number_Row1=Number_Row1+Number_Row6
+                 
+                                                                    elif Number_Row8[0:1]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row8[1:2]:
+                                                                           Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                           Number_Row6=Number_Row_Count_str1
+                                                                           Number_Row1=Number_Row1+Number_Row6
+
+                                                                    else:
+                                                                          Number_Row6=Number_Row8
+                                                                          Number_Row1=Number_Row1+Number_Row6      
+
+
+
+ 
+                                                            elif Number_Row8[0:1]==Number_Row_Count_str[0:1] and Number_Row8[0:1]!=Number_Row8[1:2]:
+                                                                            Number_Row_Count_str1=str(Number_Row_Count2)
+                                                                            Number_Row6=Number_Row_Count_str1
+                                                                           
+
+                                                                            Number_Row6=Number_Row8
+                                                                            
+
+                                                                            Number_Row8=Number_Row8+Number_Row6
+
+                                                                            if Number_Row8[1:2]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row8[1:2]:
+                                                                                    Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                                    Number_Row6=Number_Row_Count_str1
+                                                                                    Number_Row1=Number_Row1+Number_Row6
+                 
+                                                                            elif Number_Row8[0:1]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row8[1:2]:
+                                                                                    Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                                    Number_Row6=Number_Row_Count_str1
+                                                                                    Number_Row1=Number_Row1+Number_Row6
+
+                                                                            else:
+                                                                                    Number_Row6=Number_Row8
+                                                                                    Number_Row1=Number_Row1+Number_Row6      
+
+
+
+                                                            else:
+                                                                            Number_Row6=Number_Row8
+                                                                            Number_Row_Count_str1=str(Number_Row_Count2)
+                                                                            Number_Row6=Number_Row_Count_str1
+                                                                            
+
+                                                                            Number_Row6=Number_Row8
+                                                                           
+
+                                                                            Number_Row8=Number_Row8+Number_Row6
+
+                                                                            if Number_Row8[1:2]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row8[1:2]:
+                                                                                    Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                                    Number_Row6=Number_Row_Count_str1
+                                                                                    
+                 
+                                                                            elif Number_Row8[0:1]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row8[1:2]:
+                                                                                    Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                                    Number_Row6=Number_Row_Count_str1
+                                                                                    
+
+                                                                            else:
+                                                                                    Number_Row6=Number_Row8
+                                                                                        
+
+
+                                                                    
+
+                                                    elif Number_Row6[0:1]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row6[1:2]:
+                                                            
+                                                            Number_Row8=Number_Row6[1:2]+Number_Row6[0:1]
+                                                            
+                                                            
+
+                                                            if Number_Row8[1:2]==Number_Row_Count_str[0:1] and Number_Row8[0:1]!=Number_Row8[1:2]:
+                                                                    Number_Row_Count_str1=str(Number_Row_Count2)
+                                                                    Number_Row6=Number_Row_Count_str1
+                                                                    Number_Row1=Number_Row1+Number_Row6
+ 
+                                                            elif Number_Row8[0:1]==Number_Row_Count_str[0:1] and Number_Row8[0:1]!=Number_Row8[1:2]:
+                                                                    Number_Row_Count_str1=str(Number_Row_Count2)
+                                                                    Number_Row6=Number_Row_Count_str1
+                                                                    Number_Row1=Number_Row1+Number_Row6
+
+                                                            else:
+                                                                    Number_Row6=Number_Row8
+                                                                    Number_Row1=Number_Row1+Number_Row6
 
                                                             
-                                                    Number_Row6=Number_Row_Count_str1
-                                                    Number_Row1=Number_Row1+Number_Row6
+
+                                                    else:
+                                                             Number_Row8=Number_Row8+Number_Row6
+
+                                                             if Number_Row8[1:2]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row6[1:2]:
+                                                                    Number_Row_Count_str1=str(Number_Row_Count2)
+                                                                    Number_Row6=Number_Row_Count_str1
+                                                                    
+
+                                                                    Number_Row8=Number_Row8+Number_Row6
+
+                                                                    if Number_Row8[1:2]==Number_Row_Count_str[0:1] and Number_Row8[0:1]!=Number_Row8[1:2]:
+                                                                            Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                            Number_Row6=Number_Row_Count_str1
+                                                                            Number_Row1=Number_Row1+Number_Row6
+         
+                                                                    elif Number_Row8[0:1]==Number_Row_Count_str[0:1] and Number_Row8[0:1]!=Number_Row8[1:2]:
+                                                                            Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                            Number_Row6=Number_Row_Count_str1
+                                                                            Number_Row1=Number_Row1+Number_Row6
+
+                                                                    else:
+                                                                            Number_Row6=Number_Row8
+                                                                            Number_Row1=Number_Row1+Number_Row8     
+ 
+                                                             elif Number_Row8[0:1]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row6[1:2]:
+                                                                    Number_Row_Count_str1=str(Number_Row_Count2)
+                                                                    Number_Row6=Number_Row_Count_str1
+                                                                   
+
+                                                                    Number_Row8=Number_Row8+Number_Row6
+
+                                                                    if Number_Row8[1:2]==Number_Row_Count_str[0:1] and Number_Row8[0:1]!=Number_Row8[1:2]:
+                                                                            Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                            Number_Row6=Number_Row_Count_str1
+                                                                            
+
+                                                                            Number_Row6=Number_Row8
+                                                                            
+
+                                                                            Number_Row8=Number_Row8+Number_Row6
+
+                                                                            if Number_Row8[1:2]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row8[1:2]:
+                                                                                    Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                                    Number_Row6=Number_Row_Count_str1
+                                                                                    Number_Row1=Number_Row1+Number_Row6
+                 
+                                                                            elif Number_Row8[0:1]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row8[1:2]:
+                                                                                    Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                                    Number_Row6=Number_Row_Count_str1
+                                                                                    Number_Row1=Number_Row1+Number_Row6
+
+                                                                            else:
+                                                                                    Number_Row6=Number_Row8
+                                                                                    Number_Row1=Number_Row1+Number_Row6      
+
+
+
+         
+                                                                    elif Number_Row8[0:1]==Number_Row_Count_str[0:1] and Number_Row8[0:1]!=Number_Row8[1:2]:
+                                                                            Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                            Number_Row6=Number_Row_Count_str1
+                                                                            
+                                                                            Number_Row6=Number_Row8
+                                                                            
+
+                                                                            Number_Row8=Number_Row8+Number_Row6
+
+                                                                            if Number_Row8[1:2]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row8[1:2]:
+                                                                                    Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                                    Number_Row6=Number_Row_Count_str1
+                                                                                    Number_Row1=Number_Row1+Number_Row6
+                 
+                                                                            elif Number_Row8[0:1]==Number_Row_Count_str[0:1] and Number_Row6[0:1]!=Number_Row8[1:2]:
+                                                                                    Number_Row_Count_str1=str(Number_Row_Count3)
+                                                                                    Number_Row6=Number_Row_Count_str1
+                                                                                    Number_Row1=Number_Row1+Number_Row6
+
+                                                                            else:
+                                                                                    Number_Row6=Number_Row8
+                                                                                    Number_Row1=Number_Row1+Number_Row6      
+
+
+
+     
+
+
+
+                                                             
+                                                                   
+
+                                                           
+
+                                                             
+                                                    
+                                                            
+
+
+
+
+
+                                                        
+
+                                                            
                                                     
                                                  
                                             
@@ -342,7 +555,15 @@ class compression:
                                             Number_Row_Count=Number_Row_Count+1
                                             if Number_Row_Count==99:
                                                             Number_Row_Count=10
+                                            
                                                             Number_Row_Count_str=str(Number_Row_Count)
+                                                            if Number_Row_Count_str[0:1]==Number_Row_Count_str[1:2]:
+                                                                    Number_Row_Count=Number_Row_Count+1
+                                                                    if Number_Row_Count==99:
+                                                                            Number_Row_Count=10
+                                            
+                                                                    Number_Row_Count_str=str(Number_Row_Count)
+                                                                    
                                     
 
                                     Number_Row3=Number_Row1
