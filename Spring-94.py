@@ -266,7 +266,7 @@ class compression:
                                             elif Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row_Count=Number_Row_Count-50
                                                     if Number_Row_Count<=9:
-                                                            Number_Row_Count=90+Number_Row_Count
+                                                            Number_Row_Count=90+Number_Row_Count#50-99
                                                     
                                                             
                                                     
