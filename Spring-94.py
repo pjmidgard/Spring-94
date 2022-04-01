@@ -331,7 +331,7 @@ class compression:
                                             
                                             
                                             Number_Row_Count=Number_Row_Count+1
-                                            if Number_Row_Count==99:
+                                            if Number_Row_Count==100:
                                                             Number_Row_Count=10
                                             
                                             Number_Row_Count_str=str(Number_Row_Count)
@@ -724,7 +724,7 @@ class compression:
                                                                             ei=ei+1
                                                                             
                                                                     Number_Row_Count=Number_Row_Count+1
-                                                                    if Number_Row_Count==99:
+                                                                    if Number_Row_Count==100:
                                                                                     Number_Row_Count=10
                                                                     Number_Row_Count_str=str(Number_Row_Count)
                                                                         
