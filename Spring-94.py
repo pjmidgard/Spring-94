@@ -704,16 +704,16 @@ class compression:
                                                                                     Number_Row8=Number_Row2[0:1]
                                                                                     
                                                                                     Number_Row8=Number_Row2
-                                                                                    Number_Row1=Number_Row1+Number_Row8+Number_Row7
+                                                                                    Number_Row1=Number_Row1+Number_Row7+Number_Row8
                                                                                     pin_bits=0
                                                                                     ei=ei+1
 
-                                                                            if Number_Row2[0:1]!=Number_Row_Count_str[0:1] and ei!=0:
+                                                                            if Number_Row2[1:2]!=Number_Row_Count_str[0:1] and ei!=0:
                                                                 
                                                                                     Number_Row6=Number_Row2[0:1]
                                                                                     
                                                                                     Number_Row6=Number_Row2
-                                                                                    Number_Row1=Number_Row1+Number_Row7+Number_Row6
+                                                                                    Number_Row1=Number_Row1+Number_Row6+Number_Row7
                                                                                     pin_bits=0
                                                                                     ei=ei+1
                                                                     if Spin_bits==2:
