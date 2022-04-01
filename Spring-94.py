@@ -26,13 +26,13 @@ class compression:
                         if Number_Row_Count1>Number_Row_Count:                  
                                 Number_Row_Count1=Number_Row_Count1+10
                                                             
-                        if Number_Row_Count1>99:
-                                Number_Row_Count1=Number_Row_Count1-100
+                                if Number_Row_Count1>99:
+                                   Number_Row_Count1=Number_Row_Count1-100
 
-                        if Number_Row_Count1<Number_Row_Count:                  
+                        elif Number_Row_Count1<Number_Row_Count:                  
                                 Number_Row_Count1=Number_Row_Count1-10
                                                             
-                        if Number_Row_Count1<0:
+                            if Number_Row_Count1<0:
                                 Number_Row_Count1=89-Number_Row_Count1
                                                   
                                                     
