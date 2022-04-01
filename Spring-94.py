@@ -13,8 +13,34 @@ namez = input("c,  compress or e, extract? ")
 
 #@Author Jurijus Pacalovas
 class compression:
+
+
+        
+
+                
        
         def cryptograpy_compression4(self):
+                def Forest(Number_Row2,Number_Row_Count):
+
+                        Number_Row_Count1=int(Number_Row2)
+                        if Number_Row_Count1>Number_Row_Count:                  
+                                Number_Row_Count1=Number_Row_Count1+10
+                                                            
+                        if Number_Row_Count1>99:
+                                Number_Row_Count1=Number_Row_Count1-100
+
+                        if Number_Row_Count1<Number_Row_Count:                  
+                                Number_Row_Count1=Number_Row_Count1-10
+                                                            
+                        if Number_Row_Count1<0:
+                                Number_Row_Count1=89-Number_Row_Count1
+                                                  
+                                                    
+                        Number_Row_Count_str1=str(Number_Row_Count1)
+                        if Number_Row_Count1>-1 and Number_Row_Count1<10:
+                                Number_Row_Count_str1="0"+Number_Row_Count_str1     
+                        Number_Row6=Number_Row_Count_str1
+                        return Number_Row6
                 
                 self.name = "Written: Jurijus pacalovas"
 
@@ -264,45 +290,14 @@ class compression:
                                                     
 
                                             elif Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                    Number_Row_Count1=int(Number_Row2)
-                                                    if Number_Row_Count1>Number_Row_Count:                  
-                                                            Number_Row_Count1=Number_Row_Count1+10
-                                                            
-                                                            if Number_Row_Count1>99:
-                                                                    Number_Row_Count1=Number_Row_Count1-100
-
-                                                    if Number_Row_Count1<Number_Row_Count:                  
-                                                            Number_Row_Count1=Number_Row_Count1-10
-                                                            
-                                                            if Number_Row_Count1<10:
-                                                                    Number_Row_Count1=90+Number_Row_Count1
-                                                  
-                                                    
-                                                    Number_Row_Count_str1=str(Number_Row_Count1)
-                                                    Number_Row6=Number_Row_Count_str1
+                                                    Number_Row6=Forest(Number_Row2,Number_Row_Count)
                                                     Number_Row1=Number_Row1+Number_Row6
-                                                    
                                                     
                                                             
 
 
                                             elif Number_Row2[1:2]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                    Number_Row_Count1=int(Number_Row2)
-                                                    if Number_Row_Count1>Number_Row_Count:                  
-                                                            Number_Row_Count1=Number_Row_Count1+10
-                                                            
-                                                            if Number_Row_Count1>99:
-                                                                    Number_Row_Count1=Number_Row_Count1-100
-
-                                                    if Number_Row_Count1<Number_Row_Count:                  
-                                                            Number_Row_Count1=Number_Row_Count1-10
-                                                            
-                                                            if Number_Row_Count1<10:
-                                                                    Number_Row_Count1=90+Number_Row_Count1
-                                                  
-                                                    
-                                                    Number_Row_Count_str1=str(Number_Row_Count1)
-                                                    Number_Row6=Number_Row_Count_str1
+                                                    Number_Row6=Forest(Number_Row2,Number_Row_Count)
                                                     Number_Row1=Number_Row1+Number_Row6
                                                     
                                                     
@@ -322,22 +317,7 @@ class compression:
                                                             
                                             else:
                                                     
-                                                    Number_Row_Count1=int(Number_Row2)
-                                                    if Number_Row_Count1>Number_Row_Count:                  
-                                                            Number_Row_Count1=Number_Row_Count1+10
-                                                            
-                                                            if Number_Row_Count1>99:
-                                                                    Number_Row_Count1=Number_Row_Count1-100
-
-                                                    if Number_Row_Count1<Number_Row_Count:                  
-                                                            Number_Row_Count1=Number_Row_Count1-10
-                                                            
-                                                            if Number_Row_Count1<10:
-                                                                    Number_Row_Count1=90+Number_Row_Count1
-                                                  
-                                                    
-                                                    Number_Row_Count_str1=str(Number_Row_Count1)
-                                                    Number_Row6=Number_Row_Count_str1
+                                                    Number_Row6=Forest(Number_Row2,Number_Row_Count)
                                                     Number_Row1=Number_Row1+Number_Row6
                                                     
                                                     
@@ -744,7 +724,7 @@ class compression:
                                                                             ei=ei+1
                                                                             
                                                                     Number_Row_Count=Number_Row_Count+1
-                                                                    if Number_Row_Count==99:
+                                                                    if Number_Row_Count==100:
                                                                                     Number_Row_Count=10
                                                                     Number_Row_Count_str=str(Number_Row_Count)
                                                                         
