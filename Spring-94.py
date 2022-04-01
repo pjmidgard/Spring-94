@@ -79,21 +79,25 @@ class compression:
                     compress_or_not_compress=1
                     Circle_times3=0
 
+                    
+
                     if i==2:
-                        if nameas[nac-4:nac]==".bin":
+                        Forest=".paqForest"
+                        Forest_len=len(Forest)
+                        if nameas[nac-Forest_len:nac]==".paqForest":
                    
-                        	nameas=name[:nac-4]
+                        	nameas=name[:nac-Forest_len]
                         	nac=len(nameas)
                         	
                         	C=1
 
-                        elif nameas[nac-4:nac]!=".bin":
+                        elif nameas[nac-Forest_len:nac]!=".paqForest":
                                 print("Sorry, this is not binary file!")
                                 raise SystemExit
                    
                     if i==1:
                         
-                        nameas=name+".bin"
+                        nameas=name+".paqForest"
                     
                     	
                     nac=len(nameas)
@@ -101,6 +105,7 @@ class compression:
                    
                     s=""
                     Number_Row_Count=10
+                    Number_Row_Count2=10
 
                     Equal_info_between_of_the_cirlce_of_the_file=""
                     Equal_info_between_of_the_cirlce_of_the_file_2=""
@@ -268,7 +273,9 @@ class compression:
                                     Number_Row_Count=10
                                     Number_Row_Count_str3=""
                                     Number_Row=str(Number_of_the_file)
-                                    Number_Row_Count_str=str(Number_Row_Count)
+                                    Number_Row1=str(Number_Row_Count2)
+                                    Number_Row_Count=int(Number_Row1)
+                                    Number_Row_Count_str=Number_Row1
                                     
                             
                                     
@@ -279,8 +286,7 @@ class compression:
                                             Number_Row2=Number_Row[ei:ei+2]
                                             Number_Row8=Number_Row2[ei+2:ei+3]
                                             Number_Row3=Number_Row2
-                                            Number_Row_Count_str3=str(Number_Row_Count)
-                                            Number_Row_Count_str=str(Number_Row_Count)
+                                            Number_Row_Count_str=str(Number_Row_Count2)
                                             Number_Row_Count_str2=Number_Row_Count_str[1:2]+Number_Row_Count_str[0:1]
 
 
@@ -346,6 +352,16 @@ class compression:
 
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_11
 
+
+                                    Number_Row_Count2=int(Number_Row_Count_str)
+
+
+                                    Number_Row_Count2=Number_Row_Count2+1
+                                    if Number_Row_Count2==100:
+                                                Number_Row_Count2=10
+                                            
+                                    
+
                                     
                                     
                                             #print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
@@ -355,8 +371,8 @@ class compression:
                                    
                                 
                                     #print(lenfS)
-                                    if lenf6==lenfS:
-                                            Deep3=lenfS
+                                    
+                                    Deep3=384
                                             
                                     if compress_or_not_compress==2 and Circle_times2==0:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
