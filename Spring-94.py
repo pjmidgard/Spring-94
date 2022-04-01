@@ -699,7 +699,7 @@ class compression:
                                                                     if Spin_bits==3:
                                                                             Number_Row2=Number_Row[ei:ei+1]
 
-                                                                            if Number_Row2[0:1]==Number_Row_Count_str[0:1] and ei!=0:
+                                                                            if Number_Row2[1:2]==Number_Row_Count_str[0:1] and ei!=0:
                                                                 
                                                                                     Number_Row8=Number_Row2[0:1]
                                                                                     
