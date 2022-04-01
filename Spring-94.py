@@ -266,13 +266,13 @@ class compression:
                                             elif Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row_Count1=int(Number_Row2)
                                                     if Number_Row_Count1>Number_Row_Count:                  
-                                                            Number_Row_Count1=Number_Row_Count1+30
+                                                            Number_Row_Count1=Number_Row_Count1+10
                                                             
                                                             if Number_Row_Count1>99:
                                                                     Number_Row_Count1=Number_Row_Count1-100
 
                                                     if Number_Row_Count1<Number_Row_Count:                  
-                                                            Number_Row_Count1=Number_Row_Count1-30
+                                                            Number_Row_Count1=Number_Row_Count1-10
                                                             
                                                             if Number_Row_Count1<10:
                                                                     Number_Row_Count1=90+Number_Row_Count1
@@ -289,13 +289,13 @@ class compression:
                                             elif Number_Row2[1:2]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row_Count1=int(Number_Row2)
                                                     if Number_Row_Count1>Number_Row_Count:                  
-                                                            Number_Row_Count1=Number_Row_Count1+20
+                                                            Number_Row_Count1=Number_Row_Count1+10
                                                             
                                                             if Number_Row_Count1>99:
                                                                     Number_Row_Count1=Number_Row_Count1-100
 
                                                     if Number_Row_Count1<Number_Row_Count:                  
-                                                            Number_Row_Count1=Number_Row_Count1-20
+                                                            Number_Row_Count1=Number_Row_Count1-10
                                                             
                                                             if Number_Row_Count1<10:
                                                                     Number_Row_Count1=90+Number_Row_Count1
