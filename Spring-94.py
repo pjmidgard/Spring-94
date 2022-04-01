@@ -30,7 +30,7 @@ class compression:
                                    Number_Row_Count1=Number_Row_Count1-100
 
                         elif Number_Row_Count1<Number_Row_Count:                  
-                                Number_Row_Count1=Number_Row_Count1-10
+                            Number_Row_Count1=Number_Row_Count1-10
                                                             
                             if Number_Row_Count1<0:
                                 Number_Row_Count1=89-Number_Row_Count1
