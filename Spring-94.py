@@ -648,7 +648,7 @@ class compression:
                                                             
                                                         Number_Row1=""
                                                         Number_Row6=""
-                                                        Number_Row_Count=20
+                                                        Number_Row_Count=10
                                                         Number_Row_Count_str3=""
                                                         Number_Row=str(Number_of_the_file)
                                                         Number_Row_Count=Number_Row_Count+1
@@ -735,8 +735,8 @@ class compression:
                                                                             ei=ei+1
                                                                             
                                                                     Number_Row_Count=Number_Row_Count+1
-                                                                    if Number_Row_Count==50:
-                                                                                    Number_Row_Count=20
+                                                                    if Number_Row_Count==89:
+                                                                                    Number_Row_Count=10
                                                                     Number_Row_Count_str=str(Number_Row_Count)
                                                                         
                                                         Number_Row3=Number_Row1
