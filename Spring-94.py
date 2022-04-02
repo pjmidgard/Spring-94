@@ -654,7 +654,7 @@ class compression:
                                                                             Number_Row6=Number_Row_Count_str
                                                                             Number_Row1=Number_Row1+Number_Row6
                                                                             Spin_bits=0
-                                                                            ei=ei+2
+                                                                            ei=ei+1
 
                                                                     
                                                                     if Spin_bits==1:
