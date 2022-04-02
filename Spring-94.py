@@ -20,20 +20,50 @@ class compression:
                 
        
         def cryptograpy_compression4(self):
+
+                def Forest_Extract(Number_Row2,Number_Row_Count):
+
+                        Number_Row_Count1=int(Number_Row2)
+                        if Number_Row_Count1>Number_Row_Count or Number_Row_Count1>89:                  
+                                Number_Row_Count1=Number_Row_Count1-10
+                                                            
+                                
+                                if Number_Row_Count1<90:
+                                        Number_Row_Count1=Number_Row_Count1-10
+
+                                if Number_Row_Count1>89:
+                                        Number_Row_Count1=Number_Row_Count1-80
+
+                        elif Number_Row_Count1<Number_Row_Count or Number_Row_Count1<10:                  
+                               
+                                                            
+                               if Number_Row_Count1>10:
+                                        Number_Row_Count1=Number_Row_Count1+10
+
+                               if Number_Row_Count1<10:
+                                        Number_Row_Count1=Number_Row_Count1+80
+                                                  
+                                                    
+                        Number_Row_Count_str1=str(Number_Row_Count1)
+                        if Number_Row_Count1>-1 and Number_Row_Count1<10:
+                                Number_Row_Count_str1="0"+Number_Row_Count_str1     
+                        Number_Row6=Number_Row_Count_str1
+                        return Number_Row6
+                
                 def Forest(Number_Row2,Number_Row_Count):
 
                         Number_Row_Count1=int(Number_Row2)
                         if Number_Row_Count1>Number_Row_Count:                  
                                 Number_Row_Count1=Number_Row_Count1+10
                                                             
-                        if Number_Row_Count1>99:
-                                Number_Row_Count1=Number_Row_Count1-100
+                                if Number_Row_Count1>99:
+                                        Number_Row_Count1=Number_Row_Count1-100
 
-                        if Number_Row_Count1<Number_Row_Count:                  
+                        elif Number_Row_Count1<Number_Row_Count:                  
                                 Number_Row_Count1=Number_Row_Count1-10
                                                             
-                        if Number_Row_Count1<0:
-                                Number_Row_Count1=89-Number_Row_Count1
+                                if Number_Row_Count1<0:
+                                        Number_Row_Count1=89-Number_Row_Count1
                                                   
                                                     
                         Number_Row_Count_str1=str(Number_Row_Count1)
@@ -552,7 +582,7 @@ class compression:
                                                 Deep5 = int(sda10, 2)
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                Deep7=Deep5-2
+                                                
                                                 
                                                 Times_6=Equal_info_between_of_the_cirlce_of_the_file[0:48]
                                                 T = int(Times_6, 2)
@@ -683,12 +713,7 @@ class compression:
                                                                             Spin_bits=1
                                                                             ei=ei+1
 
-                                                                    elif Number_Row2[0:1]!=Number_Row_Count_str[0:1] and Number_Row2[0:1]!=Number_Row_Count_str[1:2] and ei!=0:
-                                                                
-                                                                            Number_Row7=Number_Row2[0:1]
-                                                                            Spin_bits=3
-                                                                            
-                                                                            ei=ei+1
+                                                                   
 
                                                                     elif Number_Row2[0:1]==Number_Row_Count_str[0:1] and ei!=0:
                                                                 
@@ -699,40 +724,17 @@ class compression:
 
                                                                     
                                                                     if Spin_bits==1:
-                                                                            Number_Row2=Number_Row[ei:ei+1]
-                                                                            Number_Row6=Number_Row2
-                                                                            Number_Row1=Number_Row1+Number_Row6+Number_Row7
-                                                                            pin_bits=0
-                                                                            ei=ei+1
-                                                                    if Spin_bits==3:
-                                                                            Number_Row2=Number_Row[ei:ei+1]
-
-                                                                            if Number_Row2[1:2]==Number_Row_Count_str[0:1] and ei!=0:
-                                                                
-                                                                                    Number_Row8=Number_Row2[0:1]
-                                                                                    
-                                                                                    Number_Row8=Number_Row2
-                                                                                    Number_Row1=Number_Row1+Number_Row7+Number_Row8
-                                                                                    pin_bits=0
-                                                                                    ei=ei+1
-
-                                                                            if Number_Row2[1:2]!=Number_Row_Count_str[0:1] and ei!=0:
-                                                                
-                                                                                    Number_Row6=Number_Row2[0:1]
-                                                                                    
-                                                                                    Number_Row6=Number_Row2
-                                                                                    Number_Row1=Number_Row1+Number_Row6+Number_Row7
-                                                                                    pin_bits=0
-                                                                                    ei=ei+1
-                                                                    if Spin_bits==2:
-                                                                            Number_Row2=Number_Row[ei:ei+1]
-                                                                            Number_Row6=Number_Row2
+                                                                            Number_Row8=Number_Row[ei:ei+1]
+                                                                            Number_Row9=Number_Row7+Number_Row8
+                                                                            Number_Row6=Forest_Extract(Number_Row9,Number_Row_Count)
+                                                                            
                                                                             Number_Row1=Number_Row1+Number_Row6
                                                                             pin_bits=0
                                                                             ei=ei+1
+                                                                    
                                                                             
                                                                     Number_Row_Count=Number_Row_Count+1
-                                                                    if Number_Row_Count==99:
+                                                                    if Number_Row_Count==90:
                                                                                     Number_Row_Count=10
                                                                     Number_Row_Count_str=str(Number_Row_Count)
                                                                         
