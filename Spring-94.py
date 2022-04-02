@@ -34,6 +34,7 @@ class compression:
                                                             
                             if Number_Row_Count1<0:
                                 Number_Row_Count1=89-Number_Row_Count1
+                        
                                                   
                                                     
                         Number_Row_Count_str1=str(Number_Row_Count1)
@@ -354,9 +355,8 @@ class compression:
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                    
                                 
-                                    #print(lenfS)
-                                    if lenf6==lenfS:
-                                            Deep3=lenfS
+                                   
+                                    Deep3=2400
                                             
                                     if compress_or_not_compress==2 and Circle_times2==0:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
