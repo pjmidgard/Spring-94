@@ -26,15 +26,14 @@ class compression:
                         if Number_Row_Count1>Number_Row_Count:                  
                                 Number_Row_Count1=Number_Row_Count1+10
                                                             
-                                if Number_Row_Count1>99:
-                                   Number_Row_Count1=Number_Row_Count1-100
+                        if Number_Row_Count1>99:
+                                Number_Row_Count1=Number_Row_Count1-100
 
-                        elif Number_Row_Count1<Number_Row_Count:                  
-                            Number_Row_Count1=Number_Row_Count1-10
+                        if Number_Row_Count1<Number_Row_Count:                  
+                                Number_Row_Count1=Number_Row_Count1-10
                                                             
-                            if Number_Row_Count1<0:
+                        if Number_Row_Count1<0:
                                 Number_Row_Count1=89-Number_Row_Count1
-                        
                                                   
                                                     
                         Number_Row_Count_str1=str(Number_Row_Count1)
@@ -292,22 +291,19 @@ class compression:
 
                                             elif Number_Row2[0:1]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row6=Forest(Number_Row2,Number_Row_Count)
-                                                    Number_Row9=int(Number_Row6)
-                                                    if Number_Row9==Number_Row_Count:
-                                                        compress_or_not_compress=2
-                                                        
                                                     Number_Row1=Number_Row1+Number_Row6
+                                                    if Number_Row6[0:1]==Number_Row_Count_str[0:1]:
+                                                            compress_or_not_compress==2 
+                                                            
                                                     
                                                             
 
 
                                             elif Number_Row2[1:2]==Number_Row_Count_str[0:1] and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
                                                     Number_Row6=Forest(Number_Row2,Number_Row_Count)
-                                                    Number_Row9=int(Number_Row6)
-                                                    if Number_Row9==Number_Row_Count:
-                                                        compress_or_not_compress=2
-                                                        
                                                     Number_Row1=Number_Row1+Number_Row6
+                                                    if Number_Row6[0:1]==Number_Row_Count_str[0:1]:
+                                                            compress_or_not_compress==2 
                                                     
                                                     
 
@@ -318,6 +314,7 @@ class compression:
                                                 
                                                     Number_Row6=Number_Row2[0:1]#check two numbers of predict, left 0:1 and delete the last one.
                                                     Number_Row1=Number_Row1+Number_Row6
+                                                    Number_Row6
                                                     #Number_Row14=Number_Row14+bin(ei)[2:]#where information
                                                 
                                         
@@ -327,11 +324,10 @@ class compression:
                                             else:
                                                     
                                                     Number_Row6=Forest(Number_Row2,Number_Row_Count)
-                                                    Number_Row9=int(Number_Row6)
-                                                    if Number_Row9==Number_Row_Count:
-                                                        compress_or_not_compress=2
-                                                        
-                                                    Number_Row1=Number_Row1+Number_Row6                                                    
+                                                    Number_Row1=Number_Row1+Number_Row6
+                                                    if Number_Row6[0:1]==Number_Row_Count_str[0:1]:
+                                                            compress_or_not_compress==2 
+                                                    
                                                     
 
                                             
@@ -343,7 +339,7 @@ class compression:
                                             
                                             
                                             Number_Row_Count=Number_Row_Count+1
-                                            if Number_Row_Count==89:
+                                            if Number_Row_Count==90:
                                                             Number_Row_Count=10
                                             
                                             Number_Row_Count_str=str(Number_Row_Count)
@@ -366,8 +362,9 @@ class compression:
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                    
                                 
-                                    if lenfS==lenf6:
-                                        Deep3=lenfS
+                                    #print(lenfS)
+                                    if lenf6==lenfS:
+                                            Deep3=lenfS
                                             
                                     if compress_or_not_compress==2 and Circle_times2==0:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
@@ -735,7 +732,7 @@ class compression:
                                                                             ei=ei+1
                                                                             
                                                                     Number_Row_Count=Number_Row_Count+1
-                                                                    if Number_Row_Count==89:
+                                                                    if Number_Row_Count==99:
                                                                                     Number_Row_Count=10
                                                                     Number_Row_Count_str=str(Number_Row_Count)
                                                                         
