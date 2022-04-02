@@ -24,6 +24,7 @@ class compression:
                 def Forest_Extract(Number_Row2,Number_Row_Count):
 
                         Number_Row_Count1=int(Number_Row2)
+                        
                         if Number_Row_Count1>Number_Row_Count or Number_Row_Count1>89:                  
                                 
                                                             
@@ -49,6 +50,7 @@ class compression:
                         if Number_Row_Count1>-1 and Number_Row_Count1<10:
                                 Number_Row_Count_str1="0"+Number_Row_Count_str1     
                         Number_Row6=Number_Row_Count_str1
+                        
                         return Number_Row6
                 
                 def Forest(Number_Row2,Number_Row_Count):
@@ -639,7 +641,7 @@ class compression:
                                                                     
                                                                     
                                                             
-                                                                    elif Number_Row2[0:1]!=Number_Row_Count_str[0:1] and Number_Row2[0:1]==Number_Row_Count_str[1:2] and ei!=0:
+                                                                    elif Number_Row2[0:1]!=Number_Row_Count_str[0:1]  and ei!=0:
                                                                 
                                                                             Number_Row7=Number_Row2[0:1]
                                                                             Spin_bits=1
@@ -706,6 +708,7 @@ class compression:
 
                                                 lenf9=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                 #print(Circle_times2)
+                                               
                                                 
                                                 
                                                 if  Circle_times2==T:
