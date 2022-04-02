@@ -698,11 +698,11 @@ class compression:
 
 
                                                                     if ei==0:
-                                                                            Number_Row6=Number_Row2
+                                                                            Number_Row6=Number_Row[ei:ei+2]
                                                                             Number_Row1=Number_Row1+Number_Row6
                                                                     
-                                                                            pin_bits=2
-                                                                            ei=ei+1
+                                                                            pin_bits=0
+                                                                            ei=ei+2
                                                                     
                                                                     
                                                                     
