@@ -643,9 +643,9 @@ class compression:
                                                             
                                                                     elif Number_Row2[0:1]!=Number_Row_Count_str[0:1]  and ei!=0:
                                                                 
-                                                                            Number_Row7=Number_Row2[0:1]
+                                                                            Number_Row10=Number_Row[ei:ei+2]
                                                                             Spin_bits=1
-                                                                            ei=ei+1
+                                                                            
 
                                                                    
 
@@ -654,17 +654,16 @@ class compression:
                                                                             Number_Row6=Number_Row_Count_str
                                                                             Number_Row1=Number_Row1+Number_Row6
                                                                             Spin_bits=0
-                                                                            ei=ei+1
+                                                                            ei=ei+2
 
                                                                     
                                                                     if Spin_bits==1:
-                                                                            Number_Row8=Number_Row[ei:ei+1]
-                                                                            Number_Row9=Number_Row7+Number_Row8
-                                                                            Number_Row6=Forest_Extract(Number_Row9,Number_Row_Count)
+                                                                           
+                                                                            Number_Row6=Forest_Extract(Number_Row10,Number_Row_Count)
                                                                             
                                                                             Number_Row1=Number_Row1+Number_Row6
                                                                             pin_bits=0
-                                                                            ei=ei+1
+                                                                            ei=ei+2
                                                                     
                                                                             
                                                                     Number_Row_Count=Number_Row_Count+1
@@ -708,16 +707,20 @@ class compression:
 
                                                 lenf9=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                 #print(Circle_times2)
-                                               
+                                                
+                                                
                                                 
                                                 
                                                 if  Circle_times2==T:
                                                            
                                                     Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
+                                                   
+                                                    
                                                 
                                                     if C==1 and T!=0:
          
                                                         Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[1:]
+                                                        
                                                         lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                         #print(lenf14)
                                                         lenf16=lenf14%8
