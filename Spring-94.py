@@ -25,14 +25,16 @@ class compression:
 
                         Number_Row_Count1=int(Number_Row2)
                         if Number_Row_Count1>Number_Row_Count or Number_Row_Count1>89:                  
-                                Number_Row_Count1=Number_Row_Count1-10
+                                
                                                             
                                 
                                 if Number_Row_Count1<90:
                                         Number_Row_Count1=Number_Row_Count1-10
 
                                 elif Number_Row_Count1>89:
+                                        
                                         Number_Row_Count1=Number_Row_Count1-90
+                                        
 
                         elif Number_Row_Count1<Number_Row_Count or Number_Row_Count1<10:                  
                                
@@ -42,8 +44,7 @@ class compression:
 
                                elif Number_Row_Count1<10:
                                         Number_Row_Count1=Number_Row_Count1+90
-                                                  
-                                                    
+                                            
                         Number_Row_Count_str1=str(Number_Row_Count1)
                         if Number_Row_Count1>-1 and Number_Row_Count1<10:
                                 Number_Row_Count_str1="0"+Number_Row_Count_str1     
@@ -590,82 +591,13 @@ class compression:
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                                 
                                                 
+                                   
                                         if   Circle_times2>0:
-                                        	Translate_info_Decimal_2=0
-                                        
-                                        	
-    
-                                        if C==1 and T!=0:
-                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
-                                                #Extract
-                                                
-                                                Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file
-                                                
-                                       
-                                    Times_6=Number_add_plus_one
-                                    Number_add_plus_one=""
-                                      
-                                    #####################################################################################################################################################
-                                   
-                                    Prime_Not=""
-                                    
-                                    
-                                    Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
-                                     
-                                    Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
-                                   
-
-                                    if i==2:
-
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=""
-                                      
-                                            Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file_2
-                                            
-                                            lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-
-                                            add_bits=""
-
-                                            Times_6=""
-
-                                            #Extract
-
-                                            sda10=""
-                                            Translate_info_Decimal=""
-                                          
-                                            Number_add_plus_one=""
-                                            Prime_Not=""
-                                            Times_6=""
-                                        
-                                            Number_of_the_file=0
-                                            Prime_Not=0
-                                         
-                                            if C==1:
-                                                if   Circle_times2==0:
-
-                                                        Translate_info_Decimal=Equal_info_between_of_the_cirlce_of_the_file[0:8]
-                                                        Translate_info_Decimal_2 = int(Translate_info_Decimal, 2)
-                                                        if Translate_info_Decimal_2>7:
-                                                                Corrupted=1
-                                                        Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[8:]
-                                                        lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-
-                                                        sda10=Equal_info_between_of_the_cirlce_of_the_file[0:48]
-                                                        Deep5 = int(sda10, 2)
-                                                        Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
-                                                        lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                        
-                                                        Times_6=Equal_info_between_of_the_cirlce_of_the_file[0:48]
-                                                        T = int(Times_6, 2)
-                                                        Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
-                                                        lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                        
-                                                        
-                                                if   Circle_times2>0:
                                                         Translate_info_Decimal_2=0
                                                 
                                                         
             
-                                                if C==1 and T!=0:
+                                        if C==1 and T!=0:
                                                         Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
                                                         #Extract
                                                         Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
@@ -749,22 +681,22 @@ class compression:
                                                         Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_11
                                                                         
                                                
-                                            Times_6=Number_add_plus_one
-                                            Number_add_plus_one=""
+                                                        Times_6=Number_add_plus_one
+                                                        Number_add_plus_one=""
                                               
                                             #####################################################################################################################################################
                                            
-                                            Prime_Not=""
+                                                        Prime_Not=""
                                             
                                             
 
                                             #Extract
                                             
                                              
-                                            Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
+                                                        Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
                                            
 
-                                            if i==2:
+                                        if i==2:
                                                 Make_togher=""
                                                 Make_togher=Times_6
                                                 Number_add_plus_one=""
