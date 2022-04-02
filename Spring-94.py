@@ -37,7 +37,7 @@ class compression:
                         elif Number_Row_Count1<Number_Row_Count or Number_Row_Count1<10:                  
                                
                                                             
-                               if Number_Row_Count1>10:
+                               if Number_Row_Count1>9:
                                         Number_Row_Count1=Number_Row_Count1+10
 
                                if Number_Row_Count1<10:
