@@ -13,54 +13,8 @@ namez = input("c,  compress or e, extract? ")
 
 #@Author Jurijus Pacalovas
 class compression:
-
-
-        
-
-                
        
         def cryptograpy_compression4(self):
-
-                def Forest_Extract(Number_Row2,Number_Row_Count):
-                        Number_Row_Count1=int(Number_Row2)
-                        if Number_Row_Count1>Number_Row_Count:                  
-                                Number_Row_Count1=Number_Row_Count1-11
-                                                            
-                                if Number_Row_Count1<11:
-                                        Number_Row_Count1=Number_Row_Count1+88
-
-                        elif Number_Row_Count1<Number_Row_Count:                  
-                                Number_Row_Count1=Number_Row_Count1+11
-                                                            
-                                if Number_Row_Count1>87:
-                                        #print(Number_Row_Count1)
-                                        Number_Row_Count1=Number_Row_Count1-88
-                        
-                        return Number_Row6
-                
-                def Forest(Number_Row2,Number_Row_Count):
-
-                        Number_Row_Count1=int(Number_Row2)
-                        if Number_Row_Count1>Number_Row_Count:                  
-                                Number_Row_Count1=Number_Row_Count1+11
-                                                            
-                                if Number_Row_Count1>87:
-                                        Number_Row_Count1=Number_Row_Count1-88
-
-                        elif Number_Row_Count1<Number_Row_Count:                  
-                                Number_Row_Count1=Number_Row_Count1-11
-                                                            
-                                if Number_Row_Count1<11:
-                                        #print(Number_Row_Count1)
-                                        Number_Row_Count1=Number_Row_Count1+88
-                                        #print(Number_Row_Count1)
-                                                  
-                                                    
-                        Number_Row_Count_str1=str(Number_Row_Count1)
-                        if Number_Row_Count1>-1 and Number_Row_Count1<10:
-                                Number_Row_Count_str1="0"+Number_Row_Count_str1     
-                        Number_Row6=Number_Row_Count_str1
-                        return Number_Row6
                 
                 self.name = "Written: Jurijus pacalovas"
 
@@ -69,6 +23,28 @@ class compression:
                         raise SystemExit
                 if namez=="c" or namez=="e":        
                     if namez=="c":
+
+                        Deep = str(input("Please, enter Deep? "))
+
+                        x = Deep.isnumeric()
+                        if x==False:
+                                print("Sorry this not whole number")
+                                raise SystemExit
+                        
+                        if x==True:
+                                Deep=int(Deep)
+                                Deep6=65535-25
+
+                                if Deep>Deep6:
+                                        Deep=Deep6
+
+                                if Deep<1:
+                                        Deep=26
+                                                
+                                Deep=Deep+25
+                                Deep2=Deep+2
+                                Deep3=Deep*2
+                                print(Deep-25)
 
                         i=1
 
@@ -91,7 +67,6 @@ class compression:
                     
                     namem=""
                     namema="?"
-                    
         
                     nameas=name
                     nac=len(nameas)
@@ -120,7 +95,6 @@ class compression:
                     
                    
                     s=""
-                    Number_Row_Count=10
 
                     Equal_info_between_of_the_cirlce_of_the_file=""
                     Equal_info_between_of_the_cirlce_of_the_file_2=""
@@ -129,7 +103,6 @@ class compression:
                     Times_6=""
 
                     Translate_info_Decimal=""
-                    #Number_Row14=""
 
                     D=0
 
@@ -152,7 +125,8 @@ class compression:
 
                         lenf1=len(data)
                         lenf7=len(data)
-                        Deep3=8
+                        if lenf7==0:
+                        	 raise SystemExit
                         
                         END_working=0
                         Circle_times2=0
@@ -278,120 +252,100 @@ class compression:
                                             
                                     Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
                                     
-                                    nameas=name+".bin"
-                                    #Algorithm paq:
-
-                                    #We need to try predict information. We try to predict number from 10-99.
+                                    nameas=name+".bin" 
                                     
-                                    Number_Row1=""
-                                    Number_Row6=""
-                                    Number_Row_Count=12
-                                    Number_Row_Count_str3=""
-                                    Number_Row=str(Number_of_the_file)
-                                    Number_Row_Count_str=str(Number_Row_Count)
+                                    bit=""
+
+                                    e=(2**Deep2)-1
+                                    g=0
+                                    f=0
                                     
-                            
-                                    
-                                    
-                                    Row=len(Number_Row)
-                                    ei=0
-                                    while ei<Row:
-                                            Number_Row2=Number_Row[ei:ei+2]
-                                            Number_Row8=Number_Row2[ei+2:ei+3]
-                                            Number_Row3=Number_Row2
-                                            Number_Row_Count_str3=str(Number_Row_Count)
-                                            Number_Row_Count_str=str(Number_Row_Count)
-                                            Number_Row_Count_str2=Number_Row_Count_str[1:2]+Number_Row_Count_str[0:1]
+                                    while f!=1:
+                                        T1=Number_of_the_file%e
+                                        if T1==0:
+                                                Number_of_the_file=Number_of_the_file//e
+                                                f=1
+                                                bit="0"
 
-
-                                            if ei==0:
-                                                    Number_Row6=Number_Row2
-                                                    Number_Row1=Number_Row1+Number_Row6
-                                                    
-
-                                            elif Number_Row2[0:1]==Number_Row_Count_str and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                    Number_Row6=Forest(Number_Row2,Number_Row_Count)
-                                                    Number_Row1=Number_Row1+Number_Row6
-                                                    if Number_Row6[0:1]==Number_Row_Count_str[0:1]:
-                                                            compress_or_not_compress==2 
-                                                            
-                                                    
-                                                            
-
-
-                                            elif Number_Row2[1:2]==Number_Row_Count_str and Number_Row2[0:2]!=Number_Row_Count_str and ei!=0:
-                                                    Number_Row6=Forest(Number_Row2,Number_Row_Count)
-                                                    Number_Row1=Number_Row1+Number_Row6
-                                                    if Number_Row6[0:1]==Number_Row_Count_str[0:1]:
-                                                            compress_or_not_compress==2 
-                                                    
-                                                    
-
-
-                                                    
-                                           
-                                            elif Number_Row2[0:2]==Number_Row_Count_str and ei!=0:
+                                        else:
+                                                e=e+1
                                                 
-                                                    Number_Row6=Number_Row_Count_str[0:1]# Two numbers of predict, left 0:1 and delete the last one.
-                                                    Number_Row1=Number_Row1+Number_Row6
-                                                 
-                                                    #Number_Row14=Number_Row14+bin(ei)[2:]#where information
-                                                
-                                        
-                                                        
-                                                         
-                                                            
-                                            else:
-                                                    
-                                                    Number_Row6=Forest(Number_Row2,Number_Row_Count)
-                                                    Number_Row1=Number_Row1+Number_Row6
-                                                    if Number_Row6[0:1]==Number_Row_Count_str[0:1]:
-                                                            compress_or_not_compress==2 
-                                                    
-                                                    
-
-                                            
-                                                    
-                                                    
-                                            ei=ei+2
-                                            
-                                            
-                                            
-                                            
-                                            Number_Row_Count=Number_Row_Count+1
-                                            if Number_Row_Count==88:
-                                                            Number_Row_Count=12
-                                            
-                                            Number_Row_Count_str=str(Number_Row_Count)
-                                                                                        
+                                                g=g+1
+                                          
+                                        if g>(2**Deep)-1:
+                                                bit="1"
+                                                Number_of_the_file=Number_of_the_file-1
+                                                f=1
+                                       
+                                    if  g>(2**Deep)-1:
+	                                    e=(2**Deep2)-1
+	                                    g=0
+	                                    f=0
+	                                
+	                                    while f!=1:
+	                                        T1=Number_of_the_file%e
+	                                        if T1==0:
+	                                                Number_of_the_file=Number_of_the_file//e
+	                                                f=1
+	                                                bit="1"
+	                                           
+	                                        else:
+	                                                e=e+1
+	                                                
+	                                                g=g+1
+	                                                
+	                                        if g>(2**Deep)-1:
+	                                                compress_or_not_compress=2
+	                                                bit=""
+	                                                
+	                                                f=1       
+                                               
+                                    if compress_or_not_compress==1:
+                                    		nameas=name+".bin"
+                                    if Number_of_the_file<0:
+                                                        compress_or_not_compress=2
                                     
-                                    Number_Row3=Number_Row1
-                                    
-                                    Number_Row_int=int(Number_Row3)
+                                  
+                                    if compress_or_not_compress==1:
+                                    	
+                                    	    Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
                                    
-                             
-                                    Equal_info_between_of_the_cirlce_of_the_file_11=bin(Number_Row_int)[2:]
+                                    if compress_or_not_compress==1:
+                                    	                          
+                                            Equal_info_between_of_the_cirlce_of_the_file_23=bin(g)[2:]
+                                            hr=Deep
+                                            
+                                        	
+                                            lenf=len(Equal_info_between_of_the_cirlce_of_the_file_23)
+                                            if lenf>Deep:
+                                            	compress_or_not_compress=2
 
-                                    Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_11
-
-                                    
-                                    
+                                            if compress_or_not_compress==1:
+                                                    
+                                                    add_bits4=""
+                                                    count_bits=hr-lenf%hr
+                                                    z=0
+                                                    if count_bits!=0:
+                                                        if count_bits!=hr:
+                                                                while z<count_bits:
+                                                                        add_bits4="0"+add_bits4
+                                                                        z=z+1
+     
+                                    if compress_or_not_compress==1:
+                                           
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17+add_bits4+Equal_info_between_of_the_cirlce_of_the_file_23+bit
+                                            sda18=Equal_info_between_of_the_cirlce_of_the_file
                                             #print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
                               
                                     
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                   
-                                
-                                    #print(lenfS) 
-                                    if lenf6==lenfS:
-                                            Deep3=lenfS
-                                            
+                                    #print(lenfS)
+
                                     if compress_or_not_compress==2 and Circle_times2==0:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
                                     
                                    
                                     Circle_times2=Circle_times2+1
-                                    
                           
                                     Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
 
@@ -408,22 +362,20 @@ class compression:
 
 
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
-                                            
                                     	   
-                                            Equal_info_between_of_the_cirlce_of_the_file0=bin(lenf7)[2:]
+                                            Equal_info_between_of_the_cirlce_of_the_file0=bin(Deep)[2:]
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file0)
 
                                             add_bits8=""
-                                            count_bits=48-lenf%48
+                                            count_bits=16-lenf%16
                                             z=0
                                             if count_bits!=0:
-                                                if count_bits!=48:
+                                                if count_bits!=16:
                                                         while z<count_bits:
                                                          	add_bits8="0"+add_bits8
                                                          	z=z+1
                                                 
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
-                                            
                                     	   
                                             Equal_info_between_of_the_cirlce_of_the_file_29=bin(Circle_times3)[2:]
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_29)
@@ -469,47 +421,9 @@ class compression:
                                                          	add_bits9="0"+add_bits9
                                                          	z=z+1       
 
-                                    #if   lenfS<=Deep3 or compress_or_not_compress==2:
-                                    	   
-
-
-                                        
-                                            #lenf=len(Number_Row14)
-
-                                           # add_bits10=""
-                                            #count_bits=8-lenf%8
-                                            #z=0
-                                            #if count_bits!=0:
-                                                #if count_bits!=8:
-                                                        #while z<count_bits:
-                                                         	#add_bits10="0"+add_bits10
-                                                         	#z=z+1   
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)                                           
                                             Equal_info_between_of_the_cirlce_of_the_file_17=add_bits9+Equal_info_between_of_the_cirlce_of_the_file1+add_bits8+Equal_info_between_of_the_cirlce_of_the_file0+add_bits7+Equal_info_between_of_the_cirlce_of_the_file_29+add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
-                                    #if   lenfS<=Deep3 or compress_or_not_compress==2:
-                                                
-                                    		
-                                    		#Number_Row14=add_bits10+Number_Row14
-                                    		#L=len(Number_Row14)
-                                    		#n = int(Number_Row14, 2)
-                                    		#width_bits=len(Number_Row14)
-                                    		#width_bits=(width_bits//8)*2
-                                    		#width_bits=str(width_bits)
-                                    		#width_bits="%0"+width_bits+"x"
-                                    		#width_bits3=binascii.unhexlify(width_bits % n)
-                                    		#width_bits2=len(width_bits3)
-                                    		#add_bitszzza=""
-                                    		#add_bitszs=""
-                                    		#Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
-
-                                    		
-                                    		
-                                    		#with open("Extra.bin", "wb") as f2:
-                                    			#f2.write(width_bits3)
-                                    		
-                                    	
-                                    		
 
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
                                                 
@@ -527,7 +441,6 @@ class compression:
                                     		
                                     		with open(nameas, "wb") as f2:
                                     			f2.write(width_bits3)
-                                    		
                                     	
                                     		x2 = time()
                                     		x3=x2-x
@@ -568,184 +481,127 @@ class compression:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[8:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
 
-                                                sda10=Equal_info_between_of_the_cirlce_of_the_file[0:48]
+                                                sda10=Equal_info_between_of_the_cirlce_of_the_file[0:16]
                                                 Deep5 = int(sda10, 2)
-                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
+                                                Deep5=Deep5+2
+                                                Deep4=Deep5-1
+                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[16:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                
+                                                Deep7=Deep5-2
                                                 
                                                 Times_6=Equal_info_between_of_the_cirlce_of_the_file[0:48]
                                                 T = int(Times_6, 2)
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+                                                print("Deep: ")
+                                                print(Deep7-25)
                                                 
-                                                
-                                   
                                         if   Circle_times2>0:
-                                                        Translate_info_Decimal_2=0
-                                                
-                                                        
-            
+                                        	Translate_info_Decimal_2=0
+                                        
+                                        	
+    
                                         if C==1 and T!=0:
-                                                        Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
-                                                        #Extract
-                                                        Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
-                                                            
-                                                        
-                                                        
-                                                            
-                                                        Number_Row1=""
-                                                        Number_Row6=""
-                                                        Number_Row_Count=12
-                                                        Number_Row_Count_str3=""
-                                                        Number_Row=str(Number_of_the_file)
-                                                        Number_Row_Count=Number_Row_Count+1
-                                                        Number_Row_Count_str=str(Number_Row_Count)
-                                                    
-                                                            
-                                                            
-                                                        Row=len(Number_Row)
-                                                        ei=0
-                                                        Spin_bits=0
-                                                        while ei<Row:
-                                                                    
-                                                                    Number_Row2=Number_Row[ei:ei+1]
-                                                                    Number_Row4=Number_Row[ei:ei+2]
-                                                                    Number_Row8=Number_Row2[ei+2:ei+3]
-                                                                    Number_Row3=Number_Row2
-                                                                    Number_Row_Count_str3=str(Number_Row_Count)
-                                                                    Number_Row_Count_str=str(Number_Row_Count)
-                                                                    Number_Row_Count_str2=Number_Row_Count_str[1:2]+Number_Row_Count_str[0:1]
+                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
+                                                lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+                                                Number_add_plus_one=Equal_info_between_of_the_cirlce_of_the_file[lenf6-Deep4:lenf6-1]
+                                                Prime_Not=Equal_info_between_of_the_cirlce_of_the_file[lenf6-1:lenf6]
+                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[0:lenf6-Deep4]
+                                        
+                                                
+                                                Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
+                                                Number_add_plus_one_2 = int(Number_add_plus_one, 2)
+                                                Prime_Not = int(Prime_Not, 2)
+                                                Hole_Number_information=(2**Deep5)-1
+                                                add_ones_together=Hole_Number_information+Number_add_plus_one_2
+                                                Number_of_the_file=Number_of_the_file*add_ones_together
+                                                Number_of_the_file=Number_of_the_file+Prime_Not
+                                       
+                                    Times_6=Number_add_plus_one
+                                    Number_add_plus_one=""
+                                      
+                                    #####################################################################################################################################################
+                                   
+                                    Prime_Not=""
+                                    
+                                    
+                                    Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
+                                     
+                                    Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
+                                   
 
+                                    if i==2:
+                                        Make_togher=""
+                                        Make_togher=Times_6
+                                        Number_add_plus_one=""
+                                        add_bits=""
+                                        if C==1 and T!=0:
+                                                Circle_times2=Circle_times2+1
 
-                                                                    if ei==0:
-                                                                            Number_Row6=Number_Row[ei:ei+2]
-                                                                            Number_Row1=Number_Row1+Number_Row6
-                                                                    
-                                                                            pin_bits=0
-                                                                            ei=ei+2
-                                                                    
-                                                                    
-                                                                    
-                                                            
-                                                                    elif Number_Row2[0:1]!="0"  and ei!=0:
-                                                                
-                                                                            Number_Row10=Number_Row[ei:ei+2]
-                                                                            Spin_bits=1
-                                                                            
+                                        lenf9=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                        #print(Circle_times2)
+                                        
+                                        
+                                        if  Circle_times2==T:
+                                        	   
+                                            if C==1 and T==0:
+                                            	Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file
+                                            	lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                            	add_bits=""
+                                            	count_bits=8-lenf%8
+                                            	z=0
+                                            	if count_bits!=0:
+                                            	        if count_bits!=8:
+                                            	            while z<count_bits:
+                                            	            	add_bits="0"+add_bits
+                                            	            	z=z+1
+                                            	Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
+                                        
+                                            if C==1 and T!=0:
+ 
+                                            	Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[3:]
+                                            	lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                            	#print(lenf14)
+                                            	lenf16=lenf14%8
+                                            	if lenf16!=0 or lenf14>=((2**40)-1)*8 or Corrupted==1:
 
-                                                                   
+                                            		print("file corrupted")
+                                            		raise SystemExit
+                                            		
+                                            	
+                                            	lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                            	add_bits=""
+                                            	count_bits=8-lenf%8
+                                            	z=0
+                                            	if count_bits!=0:
+                                            	        if count_bits!=8:
+                                            	            while z<count_bits:
+                                            	            	add_bits="0"+add_bits
+                                            	            	z=z+1
+                                            	Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
 
-                                                                    elif Number_Row2[0:1]=="0" and ei!=0:
-                                                                
-                                                                            Number_Row6=Number_Row_Count_str
-                                                                            Number_Row1=Number_Row1+Number_Row6
-                                                                            Spin_bits=0
-                                                                            ei=ei+1
+                                            L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                         
+                                            n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
+                                            width_bits=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                            width_bits=(width_bits//8)*2
+                                            width_bits=str(width_bits)
+                                            width_bits="%0"+width_bits+"x"
+                                            width_bits3=binascii.unhexlify(width_bits % n)
+                                            width_bits2=len(width_bits3)
 
-                                                                    
-                                                                    if Spin_bits==1:
-                                                                           
-                                                                            Number_Row6=Forest_Extract(Number_Row10,Number_Row_Count)
-                                                                            
-                                                                            Number_Row1=Number_Row1+Number_Row6
-                                                                            pin_bits=0
-                                                                            ei=ei+2
-                                                                    
-                                                                            
-                                                                    Number_Row_Count=Number_Row_Count+1
-                                                                    if Number_Row_Count==88:
-                                                                                    Number_Row_Count=12
-                                                                    Number_Row_Count_str=str(Number_Row_Count)
-                                                                        
-                                                        Number_Row3=Number_Row1
-                                                        #print(Number_Row3)
-                                                        
-                                                        Number_Row_int=int(Number_Row3)
-                                                           
-                                                     
-                                                        Equal_info_between_of_the_cirlce_of_the_file_11=bin(Number_Row_int)[2:]
-
-                                                        Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_11
-                                                                        
-                                               
-                                                        Times_6=Number_add_plus_one
-                                                        Number_add_plus_one=""
-                                              
-                                            #####################################################################################################################################################
-                                           
-                                                        Prime_Not=""
-                                            
-                                            
-
-                                            #Extract
-                                            
+                                            add_bitszzza=""
+                                            add_bitszs=""
+                                            Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
                                              
-                                                        Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
-                                           
-
-                                        if i==2:
-                                                Make_togher=""
-                                                Make_togher=Times_6
-                                                Number_add_plus_one=""
-                                                add_bits=""
-                                                if C==1 and T!=0:
-                                                        Circle_times2=Circle_times2+1
-
-                                                lenf9=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                                #print(Circle_times2)
-                                                
-                                                
-                                                
-                                                
-                                                if  Circle_times2==T:
-                                                           
-                                                    Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
-                                                   
-                                                    
-                                                
-                                                    if C==1 and T!=0:
-         
-                                                        Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[1:(Deep5*8)+1]
-                                                        
-                                                        lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                                        #print(lenf14)
-                                                        lenf16=lenf14%8
-                                                        
-                                                        
-                                                        lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                                        add_bits=""
-                                                        count_bits=8-lenf%8
-                                                        z=0
-                                                        if count_bits!=0:
-                                                                if count_bits!=8:
-                                                                    while z<count_bits:
-                                                                        add_bits="0"+add_bits
-                                                                        z=z+1
-                                                        Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
-
-                                                    L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                                 
-                                                    n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
-                                                    width_bits=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                                    width_bits=(width_bits//8)*2
-                                                    width_bits=str(width_bits)
-                                                    width_bits="%0"+width_bits+"x"
-                                                    width_bits3=binascii.unhexlify(width_bits % n)
-                                                    width_bits2=len(width_bits3)
-
-                                                    add_bitszzza=""
-                                                    add_bitszs=""
-                                                    Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
-                                                     
-                                                    with open(nameas, "wb") as f2:
-                                                    
-                                                      
-                                                        f2.write(width_bits3)
-                                                    x2 = time()
-                                                    x3=x2-x
-                                                    xs=float(x3)
-                                                    return print(x3)
+                                            with open(nameas, "wb") as f2:
+                                            
+                                              
+                                            	f2.write(width_bits3)
+                                            x2 = time()
+                                            x3=x2-x
+                                            xs=float(x3)
+                                            return print(x3)
    
 d=compression()
 
