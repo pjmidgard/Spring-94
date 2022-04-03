@@ -667,6 +667,9 @@ class compression:
                                                     if C==1 and T!=0:
          
                                                         Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[1:]
+
+                                                    if C==1 and T==0:
+                                                            
                                                         
                                                         lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                         #print(lenf14)
