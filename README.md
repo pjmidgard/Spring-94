@@ -4,4 +4,4 @@ Spring-94
 Algorithm paq:
 
 We need to try predict information.
-We try to predict number from 12-88.
+We try to predict number from 12-87.
